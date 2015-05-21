@@ -1,1 +1,9 @@
 /target/
+/work/plugins
+/work/hudson.model.UpdateCenter.xml
+/work/identity.key.enc
+/work/updates
+/work/jobs/Publish Internal Tests/nextBuildNumber
+/work/jobs/Publish Internal Tests/workspace
+/work/nodeMonitors.xml
+/work/userContent/readme.txt
