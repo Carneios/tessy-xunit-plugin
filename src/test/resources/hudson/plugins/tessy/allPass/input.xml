@@ -1,0 +1,95 @@
+<report xml_version="3" tessy_version="3.2.5" testobject_name="is_value_in_range" success="ok">
+	<summary>
+		<info project_name="IsValueInRange" module_name="IsValueInRange" testobject_name="is_value_in_range" cte_file="true" date="2015-05-12" time="16:13:24+0200" user="lsadau" host="PC105"/>
+		<cte>
+			<cte_file file="Iw0KIyBDVEUtRmlsZSBnZW5lcmF0ZWQgYnkgQ1RFIFZlcnNpb24gMy4yLjANCiMNCg0KRmlsZSBWZXJzaW9uICAgOiAyLjQwDQpBdXRob3IgICAgICAgICA6ICJsc2FkYXUiDQpDcmVhdGVkICAgICAgICA6IDEyLjA1LjIwMTUgMTM6MDQNCkxhc3QgQ2hhbmdlZCAgIDogMTIuMDUuMjAxNSAxMzowNA0KVmVyc2lvbiAgICAgICAgOiAxLjAxDQpGcmFtZSBGb250ICAgICA6ICJBcmlhbCwxMSwwLDAsNDAwLDAsMCwwLDEiDQpUZXN0Y2FzZSBGb250ICA6ICJBcmlhbCwxMiwwLDAsNzAwLDAsMCwwLDEiDQoNCkZyYW1lDQogIElkICAgICAgICAgICAgICAgOiAwDQogIFBvc2l0aW9uICAgICAgICAgOiAwLCAwDQogIFNpemUgICAgICAgICAgICAgOiAwLCAwDQogIEZvbnQgICAgICAgICAgICAgOiAiQXJpYWwsOSwwLDAsNDAwLDQ5LDAsMCwxIg0KICBQYXBlclNpemUgICAgICAgIDogRElOLUE0DQogIFBhcGVyT3JpZW50YXRpb24gOiBMYW5kc2NhcGUNCiAgU3RhdGUgICAgICAgICAgICA6IFpvb21lZA0KICBMYXlvdXQgICAgICAgICAgIDogMTUsIDU5DQoNCiAgRWxlbWVudA0KICAgIFR5cGUgOiBSb290DQogICAgSWQgOiAxDQogICAgUGFyZW50SWQgOiAtMQ0KICAgIE5hbWUgOiAiaXNfdmFsdWVfaW5fcmFuZ2UiDQogICAgVHJhbnNpdGlvblJvb3QgOiBObw0KICAgIFBvc2l0aW9uIDogNTAsIDEwDQogIEVuZA0KRW5k"/>
+			<cte_data>
+				<cte_node id="1">
+					<inputs>
+					</inputs>
+					<results>
+					</results>
+				</cte_node>
+			</cte_data>
+		</cte>
+		<comments>
+		</comments>
+		<statistic total="3" ok="3" ok_list="1.1;2.1;3.1" notok="0" notok_list="" notexecuted="0" notexecuted_list=""/>
+<interface>
+<mod id="b8a6c924-cbe5-42c8-8da1-40bca377381b" lid="10" opt="7" ver="17">
+<funcs>
+<func id="2" nam="is_value_in_range" scp="2" src="1"/>
+</funcs>
+<types>
+<enum id="1" nam="result" ttg="1">
+<comp id="1" nam="no" val="0" vdf="2"/>
+<comp id="2" nam="yes" val="1" vdf="2"/>
+</enum>
+<struct id="2" nam="range">
+<comp id="1" nam="range_start" tc="10" tmd="576460752303423488"/>
+<comp id="2" nam="range_len" tc="10" tmd="576460752303423488"/>
+</struct>
+</types>
+<vars/>
+</mod>
+<funcs>
+<func id="2" nam="is_value_in_range">
+<ret id="5" ips="4" pas="4" tc="15" trf="1"/>
+<parms>
+<parm id="6" ips="2" nam="r1" pas="2" tc="27" trf="2">
+<comp id="1" ips="2" pas="2"/>
+<comp id="2" ips="2" pas="2"/>
+</parm>
+<parm id="9" ips="2" nam="v1" pas="2" tc="10" tmd="576460752303423488"/>
+</parms>
+</func>
+</funcs>
+</interface>
+		<properties directory="K:\Minimal_Example\tessy\IsValueInRange\work\00000432\00000626" config="$(APP_HOME)\tessy\IsValueInRange\config\configuration.xml" project_root="K:\Minimal_Example" project_description="" environment="GNU GCC Eclipse CDT (Default)" kind_of_test="UNIT">
+			<source file="$(PROJECTROOT)\source\IsValueInRange\is_val_in_range.c" cvs_revision="1" sha1="91eddde73591777d76ad35ea6a218902fd5d52ef"/>
+		</properties>
+		<attributes>
+			<attribute name="CTE File" value="$(APP_HOME)\tessy\IsValueInRange\persist\tessy\project\00000432\00000626\.database\.tdb\0000062A\is_value_in_range.cte"/>
+		</attributes>
+	</summary>
+	<module>
+	</module>
+	<testobject success="ok">
+		<testcase id="1" dbid="1581" success="ok" testdata_success="ok">
+<teststep id="1.1" dbid="1582" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="r1.range_start" unit="" id="7" value="3" use="1"/>
+		<input name="r1.range_len" unit="" id="8" value="2" use="1"/>
+		<input name="v1" unit="" id="9" value="4" use="1"/>
+	</inputs>
+	<results>
+		<result name="is_value_in_range()" unit="" id="5" expected_value="yes" actual_value="yes" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="2" dbid="1583" success="ok" testdata_success="ok">
+<teststep id="2.1" dbid="1584" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="r1.range_start" unit="" id="7" value="0" use="1"/>
+		<input name="r1.range_len" unit="" id="8" value="5" use="1"/>
+		<input name="v1" unit="" id="9" value="6" use="1"/>
+	</inputs>
+	<results>
+		<result name="is_value_in_range()" unit="" id="5" expected_value="no" actual_value="no" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="3" dbid="1585" success="ok" testdata_success="ok">
+<teststep id="3.1" dbid="1586" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="r1.range_start" unit="" id="7" value="3" use="1"/>
+		<input name="r1.range_len" unit="" id="8" value="2" use="1"/>
+		<input name="v1" unit="" id="9" value="1" use="1"/>
+	</inputs>
+	<results>
+		<result name="is_value_in_range()" unit="" id="5" expected_value="no" actual_value="no" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+	</testobject>
+</report>
