@@ -8,7 +8,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/Carneios/tessy-jenkins-plugin.git</url>
+        <url>https://github.com/Carneios/tessy-xunit-plugin.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -29,7 +29,7 @@
   <builders>
     <org.jenkinsci.plugins.xunit.XUnitBuilder plugin="xunit@1.95">
       <types>
-        <TessyPluginType plugin="tessy@0.1-SNAPSHOT">
+        <TessyPluginType plugin="tessy-xunit@0.1-SNAPSHOT">
           <pattern>src/test/resources/**/input.xml</pattern>
           <failIfNotNew>false</failIfNotNew>
           <deleteOutputFiles>false</deleteOutputFiles>
@@ -58,7 +58,7 @@
   </builders>
   <publishers>
     <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.2-beta-4">
-      <testResults></testResults>
+      <testResults>generatedJUnitFiles/**/*.xml</testResults>
       <keepLongStdio>false</keepLongStdio>
       <testDataPublishers>
         <hudson.plugins.junitattachments.AttachmentPublisher plugin="junit-attachments@1.3"/>

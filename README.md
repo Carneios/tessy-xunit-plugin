@@ -23,3 +23,10 @@ More specifically it does:
 * The xUnit test suite name matches `@/report/summary/info/@project_name + "." +  /report/summary/info/@module_name`.
 * Test cases are named after `testcase/@name + "_" + teststep/@name` + "_" + teststep/@id`.
 * The class name is the combination of the test suite name and `/report/summary/info/@testobject_name`.
+
+# Note to the Developer 
+
+For manual testing there is a jenkins job configuration saved in this project. To use it, run
+    mvn hpi:run
+and goto 
+    http://localhost:8080/jenkins/job/Publish%20Internal%20Tests/
