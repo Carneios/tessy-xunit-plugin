@@ -84,8 +84,8 @@ THE SOFTWARE.
   </xsl:template>
   <xsl:template name="attachments">
 <system-out>
-  [[ATTACHMENT|<xsl:value-of select="$basedir" />/<xsl:value-of select="$filedir" />/<xsl:value-of select="$filename" />]]
-  [[ATTACHMENT|<xsl:value-of select="$basedir" />/<xsl:value-of select="$filedir" />/<xsl:value-of select="substring-before($filename,'.xml')" />.pdf]]
+  [[ATTACHMENT|<xsl:value-of select="$filename" />]]
+  [[ATTACHMENT|<xsl:value-of select="substring-before($filename,'.xml')" />.pdf]]
 </system-out>
   </xsl:template>
 </xsl:stylesheet>

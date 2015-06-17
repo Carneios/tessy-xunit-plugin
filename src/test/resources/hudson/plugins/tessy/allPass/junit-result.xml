@@ -6,24 +6,24 @@
         classname="IsValueInRange.IsValueInRange.is_value_in_range"
         assertions="1">
         <system-out>
-            [[ATTACHMENT|BASEDIR/FILEDIR/FILENAME.xml]]
-            [[ATTACHMENT|BASEDIR/FILEDIR/FILENAME.pdf]]
+            [[ATTACHMENT|FILENAME.xml]]
+            [[ATTACHMENT|FILENAME.pdf]]
         </system-out>
     </testcase>
     <testcase name="id2.1"
         classname="IsValueInRange.IsValueInRange.is_value_in_range"
         assertions="1">
         <system-out>
-            [[ATTACHMENT|BASEDIR/FILEDIR/FILENAME.xml]]
-            [[ATTACHMENT|BASEDIR/FILEDIR/FILENAME.pdf]]
+            [[ATTACHMENT|FILENAME.xml]]
+            [[ATTACHMENT|FILENAME.pdf]]
         </system-out>
     </testcase>
     <testcase name="id3.1"
         classname="IsValueInRange.IsValueInRange.is_value_in_range"
         assertions="1">
         <system-out>
-            [[ATTACHMENT|BASEDIR/FILEDIR/FILENAME.xml]]
-            [[ATTACHMENT|BASEDIR/FILEDIR/FILENAME.pdf]]
+            [[ATTACHMENT|FILENAME.xml]]
+            [[ATTACHMENT|FILENAME.pdf]]
         </system-out>
     </testcase>
 </testsuite>

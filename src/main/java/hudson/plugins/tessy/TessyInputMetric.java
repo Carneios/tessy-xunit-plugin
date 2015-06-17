@@ -75,8 +75,6 @@ public class TessyInputMetric extends InputMetricXSL {
    {
       final Map<String, Object> conversionParams = new HashMap<>();
       conversionParams.put(FILENAME_XSL_PARAM, inputFile.getAbsolutePath());
-      conversionParams.put(FILEDIR_XSL_PARAM, "");
-      conversionParams.put(BASEDIR_XSL_PARAM, "");
 
       if(params != null) {
          conversionParams.putAll(params);
