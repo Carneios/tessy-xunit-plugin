@@ -1,0 +1,253 @@
+TEST DETAILS REPORT
+2015-06-26, 09:37:03+0200
+TC_005_46_reportTest
+<footer>
+1
+Project
+QTS Tests
+Module
+005_ReportTests_3
+Test Object
+TC_005_46_reportTest
+Instrumentation: Test Object and Called Functions
+Branch (C1) Coverage
+66.66 %
+MC/DC Coverage
+50 %
+Statistics
+Total Testcases
+4
+Successful
+4
+Failed
+0
+Not Executed
+0
+Module Properties
+Project Root Directory
+<path>
+Configuration File
+<path>
+Target Environment
+GNU GCC Eclipse CDT (Default)
+Kind of Test
+Unit Test
+Linker Options
+ 
+Source File(s)
+File
+$(PROJECTROOT)\Source\Report\tessy_qts_report_tests_3.c
+Revision: 6
+Author: Tobias 
+Bochtler
+Date: 18.09.2013
+Compiler Options
+-DHAVE_BOOL -DHAVE_INT8 -DHAVE_INT64 -DHAVE_FLOAT -DHAVE_FLOAT64 -I$(PROJECTROOT)\Source\Include
+Attributes
+Name
+Value
+Float Eval Epsilon
+0.0
+Float Precision
+8
+Comments/Description/Specification
+Name
+Text
+Module '005_ReportTests_3'
+The ReportTest23tests are tests with instrumentation.
+ 
+TEST DETAILS REPORT
+2015-06-26, 09:37:03+0200
+TC_005_46_reportTest
+<footer>
+2
+ 
+Test Case 1
+Test Step 1.1 (Repeat Count = 1)
+Name
+Input Value
+atom_A
+0
+atom_B
+0
+atom_C
+0
+input1
+1
+input2
+2
+input3
+2
+output1
+0
+output3
+0
+Name
+Actual Value
+Expected Value
+Result
+output1
+1
+1
+output3
+0
+0
+Test Step Call Trace
+Actual Function
+Count
+Expected Function
+Count
+Result
+TC_005_42_reportTest
+1
+TC_005_42_reportTest
+1
+TC_005_43_reportTest
+1
+TC_005_43_reportTest
+1
+ 
+ 
+ 
+Test Case 2
+Test Step 2.1 (Repeat Count = 1)
+Name
+Input Value
+atom_A
+1
+atom_B
+1
+atom_C
+1
+input1
+1
+input2
+2
+input3
+2
+output1
+0
+output3
+0
+Name
+Actual Value
+Expected Value
+Result
+output1
+1
+1
+output3
+0
+0
+Test Step Call Trace
+Actual Function
+Count
+Expected Function
+Count
+Result
+TC_005_42_reportTest
+1
+TC_005_42_reportTest
+1
+TC_005_43_reportTest
+1
+TC_005_43_reportTest
+1
+ 
+ 
+ 
+Test Case 3
+Test Step 3.1 (Repeat Count = 1)
+Name
+Input Value
+atom_A
+1
+atom_B
+0
+atom_C
+0
+input1
+1
+input2
+2
+input3
+2
+output1
+0
+output3
+0
+Name
+Actual Value
+Expected Value
+Result
+output1
+0
+0
+output3
+2
+2
+TEST DETAILS REPORT
+2015-06-26, 09:37:03+0200
+TC_005_46_reportTest
+<footer>
+3
+Test Step Call Trace
+Actual Function
+Count
+Expected Function
+Count
+Result
+*none*
+0
+*** No Call Expected ***
+0
+ 
+ 
+ 
+Test Case 4
+Test Step 4.1 (Repeat Count = 1)
+Name
+Input Value
+atom_A
+0
+atom_B
+0
+atom_C
+1
+input1
+1
+input2
+2
+input3
+2
+output1
+0
+output3
+0
+Name
+Actual Value
+Expected Value
+Result
+output1
+1
+1
+output3
+0
+0
+Test Step Call Trace
+Actual Function
+Count
+Expected Function
+Count
+Result
+TC_005_42_reportTest
+1
+TC_005_42_reportTest
+1
+TC_005_43_reportTest
+1
+TC_005_43_reportTest
+1
+ 
+ 
+ 

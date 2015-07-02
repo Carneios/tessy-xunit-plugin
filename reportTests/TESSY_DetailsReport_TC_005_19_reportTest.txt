@@ -1,0 +1,92 @@
+TEST DETAILS REPORT
+2015-06-26, 09:30:51+0200
+TC_005_19_reportTest
+<footer>
+1
+Project
+QTS Tests
+Module
+005_ReportTests_2
+Test Object
+TC_005_19_reportTest
+Statistics
+Total Testcases
+4
+Successful
+4
+Failed
+0
+Not Executed
+0
+Module Properties
+Project Root Directory
+<path>
+Configuration File
+<path>
+Target Environment
+GNU GCC Eclipse CDT (Default)
+Kind of Test
+Unit Test
+Linker Options
+ 
+Source File(s)
+File
+$(PROJECTROOT)\Source\Report\tessy_qts_report_tests_2.c
+Revision: 8
+Author: Tobias 
+Bochtler
+Date: 18.09.2013
+Compiler Options
+-DHAVE_BOOL -DHAVE_INT8 -DHAVE_INT64 -DHAVE_FLOAT -DHAVE_FLOAT64 -I$(PROJECTROOT)\Source\Include
+Attributes
+Name
+Value
+Float Eval Epsilon
+0.0
+Float Precision
+8
+Comments/Description/Specification
+Name
+Text
+Module '005_ReportTests_2'
+The ReportTest2 tests are tests with usercode.
+There is no instrumentation.
+ 
+TEST DETAILS REPORT
+2015-06-26, 09:30:51+0200
+TC_005_19_reportTest
+<footer>
+2
+ 
+Usercode
+Stub Functions
+exfunc1
+$stub signed long exfunc1() {
+	// This is the line 1 of testobject specific stubfunction
+	// This is the line 2 of testobject specific stubfunction
+	// This is the line 3 of testobject specific stubfunction
+}
+exfunc2
+$stub signed long exfunc2() {
+	// This is the line 1 of testobject specific stubfunction
+	// This is the line 2 of testobject specific stubfunction
+	// This is the line 3 of testobject specific stubfunction
+}
+Definitions
+// This is the line 1 of the Definitions
+// This is the line 2 of the Definitions
+// This is the line 3 of the Definitions
+TEST DETAILS REPORT
+2015-06-26, 09:30:51+0200
+TC_005_19_reportTest
+<footer>
+3
+ 
+Test Case 1
+ 
+Test Case 2
+ 
+Test Case 3
+ 
+Test Case 4
+ 

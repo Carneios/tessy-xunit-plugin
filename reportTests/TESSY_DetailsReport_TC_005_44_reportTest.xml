@@ -1,0 +1,182 @@
+<report xml_version="3" tessy_version="3.2.6" testobject_name="TC_005_44_reportTest" success="notok">
+	<summary>
+		<info project_name="QTS Tests" module_name="005_ReportTests_3" testobject_name="TC_005_44_reportTest" date="2015-06-26" time="09:36:26+0200" user="ak" host="PC-ITW"/>
+		<coverage instrumentation="Test Object and Called Functions">
+			<mcdc name="Modified Condition / Decision Coverage (MC/DC)" success="notok" total="10" reached="6" notreached="4" percentage="60"/>
+		</coverage>
+		<comments>
+			<comment type="module" name="005_ReportTests_3" comment="The ReportTest23tests are tests with instrumentation."/>
+		</comments>
+		<statistic total="4" ok="4" ok_list="1.1;2.1;3.1;4.1" notok="0" notok_list="" notexecuted="0" notexecuted_list=""/>
+<interface>
+<mod id="e91acdfe-4efe-4bab-b78f-12cb17542bf6" lid="44" opt="7" ver="17">
+<funcs>
+<func id="4" nam="TC_005_44_reportTest" scp="2" src="1"/>
+<func id="2" nam="TC_005_42_reportTest" scp="2" src="1"/>
+<func id="3" nam="TC_005_43_reportTest" scp="2" src="1"/>
+</funcs>
+<types/>
+<vars>
+<var id="3" nam="input1" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="4" nam="output1" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="5" nam="input2" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="20" nam="output3" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="21" nam="input3" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+</vars>
+<defines>
+<define id="40" nam="HAVE_FLOAT" val="1"/>
+<define id="41" nam="HAVE_FLOAT64" val="1"/>
+<define id="42" nam="HAVE_INT64" val="1"/>
+<define id="39" nam="HAVE_BOOL" val="1"/>
+<define id="43" nam="HAVE_INT8" val="1"/>
+</defines>
+</mod>
+<funcs>
+<func id="4" nam="TC_005_44_reportTest">
+<ret id="13" tc="35"/>
+<parms>
+<parm id="14" ips="2" nam="atom_A" pas="2" tc="10" tmd="40532396646334464"/>
+<parm id="15" ips="2" nam="atom_B" pas="2" tc="10" tmd="40532396646334464"/>
+<parm id="16" ips="2" nam="atom_C" pas="2" tc="10" tmd="40532396646334464"/>
+</parms>
+<calls>
+<call id="2" use="304"/>
+<call id="3" use="48"/>
+</calls>
+<vars>
+<var crf="3" id="3" ips="2" pas="2" scp="2"/>
+<var crf="3" id="4" ips="4" pas="8" scp="2"/>
+<var crf="3" id="5" ips="2" pas="2" scp="2"/>
+<var id="20" ips="4" pas="8" scp="2"/>
+<var id="21" ips="2" pas="2" scp="2"/>
+</vars>
+</func>
+<func id="2" nam="TC_005_42_reportTest">
+<ret id="1" tc="35"/>
+<parms>
+<parm id="2" ips="2" nam="atom_A" pas="2" tc="10" tmd="40532396646334464"/>
+</parms>
+<calls>
+<call id="3" use="304"/>
+</calls>
+<vars>
+<var crf="3" id="3" ips="2" pas="2" scp="2"/>
+<var crf="3" id="4" ips="4" pas="8" scp="2"/>
+<var crf="3" id="5" ips="2" pas="2" scp="2"/>
+</vars>
+</func>
+<func id="3" nam="TC_005_43_reportTest">
+<ret id="6" tc="35"/>
+<parms>
+<parm id="7" ips="2" nam="atom_A" pas="2" tc="10" tmd="40532396646334464"/>
+<parm id="8" ips="2" nam="atom_B" pas="2" tc="10" tmd="40532396646334464"/>
+<parm id="9" ips="2" nam="atom_C" pas="2" tc="10" tmd="40532396646334464"/>
+</parms>
+<vars>
+<var id="5" ips="2" pas="2" scp="2"/>
+<var id="4" ips="4" pas="8" scp="2"/>
+<var id="3" ips="2" pas="2" scp="2"/>
+</vars>
+</func>
+</funcs>
+</interface>
+		<properties directory="E:\Projects\TESSY_TQP\tessy\work\00000bf3\00000e9c" config="$(PROJECTROOT)\tessy\config\qts_gcc_i386_configuration.xml" project_root="E:\Projects\TESSY_TQP" project_description="" environment="GNU GCC Eclipse CDT (Default)" kind_of_test="UNIT">
+			<source file="$(PROJECTROOT)\Source\Report\tessy_qts_report_tests_3.c" compiler_options=" -DHAVE_BOOL -DHAVE_INT8 -DHAVE_INT64 -DHAVE_FLOAT -DHAVE_FLOAT64 -I$(PROJECTROOT)\Source\Include" cvs_revision="6" cvs_author="Tobias Bochtler" cvs_date="18.09.2013" sha1="df65e5a317d61eeaa2722fd3e339e4fc51066281"/>
+			<header file="E:\Projects\TESSY_TQP\Source\Include\tessy_qts_types.h" sha1="3bdaaa8004f728dac64f854ea5ca4fdc61fc342c"/>
+		</properties>
+		<attributes>
+			<attribute name="Float Eval Epsilon" value="0.0"/>
+			<attribute name="Float Precision" value="8"/>
+		</attributes>
+	</summary>
+	<module>
+	</module>
+	<testobject success="notok">
+		<testcase id="1" dbid="3767" success="ok" testdata_success="ok" calltrace_success="ok">
+<teststep id="1.1" dbid="3768" success="ok" testdata_success="ok" calltrace_success="ok" repeat_count="1">
+	<call_trace teststep_id="3768" success="ok">
+		<trace_entry actual="TC_005_42_reportTest" actual_count="1" expected="TC_005_42_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_43_reportTest" actual_count="1" expected="TC_005_43_reportTest" expected_count="1" success="ok"/>
+	</call_trace>
+	<inputs>
+		<input name="atom_A" unit="" id="14" value="0" use="1"/>
+		<input name="atom_B" unit="" id="15" value="0" use="1"/>
+		<input name="atom_C" unit="" id="16" value="0" use="1"/>
+		<input name="input1" unit="" id="3" value="2" use="1"/>
+		<input name="input2" unit="" id="5" value="2" use="1"/>
+		<input name="input3" unit="" id="21" value="2" use="1"/>
+		<input name="output1" unit="" id="4" value="0" use="1"/>
+		<input name="output3" unit="" id="20" value="0" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="4" expected_value="2" actual_value="2" success="ok" use="1"/>
+		<result name="output3" unit="" id="20" expected_value="0" actual_value="0" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="2" dbid="3769" success="ok" testdata_success="ok" calltrace_success="ok">
+<teststep id="2.1" dbid="3770" success="ok" testdata_success="ok" calltrace_success="ok" repeat_count="1">
+	<call_trace teststep_id="3770" success="ok">
+		<trace_entry actual="*none*" actual_count="0" expected="*** No Call Expected ***" expected_count="0" success="ok"/>
+	</call_trace>
+	<inputs>
+		<input name="atom_A" unit="" id="14" value="1" use="1"/>
+		<input name="atom_B" unit="" id="15" value="0" use="1"/>
+		<input name="atom_C" unit="" id="16" value="0" use="1"/>
+		<input name="input1" unit="" id="3" value="2" use="1"/>
+		<input name="input2" unit="" id="5" value="2" use="1"/>
+		<input name="input3" unit="" id="21" value="2" use="1"/>
+		<input name="output1" unit="" id="4" value="0" use="1"/>
+		<input name="output3" unit="" id="20" value="0" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="4" expected_value="0" actual_value="0" success="ok" use="1"/>
+		<result name="output3" unit="" id="20" expected_value="2" actual_value="2" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="3" dbid="3771" success="ok" testdata_success="ok" calltrace_success="ok">
+<teststep id="3.1" dbid="3772" success="ok" testdata_success="ok" calltrace_success="ok" repeat_count="1">
+	<call_trace teststep_id="3772" success="ok">
+		<trace_entry actual="*none*" actual_count="0" expected="*** No Call Expected ***" expected_count="0" success="ok"/>
+	</call_trace>
+	<inputs>
+		<input name="atom_A" unit="" id="14" value="0" use="1"/>
+		<input name="atom_B" unit="" id="15" value="1" use="1"/>
+		<input name="atom_C" unit="" id="16" value="0" use="1"/>
+		<input name="input1" unit="" id="3" value="2" use="1"/>
+		<input name="input2" unit="" id="5" value="2" use="1"/>
+		<input name="input3" unit="" id="21" value="2" use="1"/>
+		<input name="output1" unit="" id="4" value="0" use="1"/>
+		<input name="output3" unit="" id="20" value="0" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="4" expected_value="0" actual_value="0" success="ok" use="1"/>
+		<result name="output3" unit="" id="20" expected_value="2" actual_value="2" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="4" dbid="3773" success="ok" testdata_success="ok" calltrace_success="ok">
+<teststep id="4.1" dbid="3774" success="ok" testdata_success="ok" calltrace_success="ok" repeat_count="1">
+	<call_trace teststep_id="3774" success="ok">
+		<trace_entry actual="TC_005_42_reportTest" actual_count="1" expected="TC_005_42_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_43_reportTest" actual_count="1" expected="TC_005_43_reportTest" expected_count="1" success="ok"/>
+	</call_trace>
+	<inputs>
+		<input name="atom_A" unit="" id="14" value="0" use="1"/>
+		<input name="atom_B" unit="" id="15" value="1" use="1"/>
+		<input name="atom_C" unit="" id="16" value="1" use="1"/>
+		<input name="input1" unit="" id="3" value="2" use="1"/>
+		<input name="input2" unit="" id="5" value="2" use="1"/>
+		<input name="input3" unit="" id="21" value="2" use="1"/>
+		<input name="output1" unit="" id="4" value="0" use="1"/>
+		<input name="output3" unit="" id="20" value="0" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="4" expected_value="2" actual_value="2" success="ok" use="1"/>
+		<result name="output3" unit="" id="20" expected_value="0" actual_value="0" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+	</testobject>
+</report>

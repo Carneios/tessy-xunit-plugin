@@ -1,0 +1,109 @@
+<report xml_version="3" tessy_version="3.2.6" testobject_name="TC_005_29_reportTest" success="notok">
+	<summary>
+		<info project_name="QTS Tests" module_name="005_ReportTests_2" testobject_name="TC_005_29_reportTest" date="2015-06-26" time="09:32:26+0200" user="ak" host="PC-ITW"/>
+		<comments>
+			<comment type="module" name="005_ReportTests_2" comment="The ReportTest2 tests are tests with usercode.&#10;There is no instrumentation."/>
+		</comments>
+		<statistic total="1" ok="0" ok_list="" notok="1" notok_list="1.1" notexecuted="0" notexecuted_list=""/>
+<interface>
+<mod id="7d3c994d-e9bc-4401-a144-cc9d91757e8f" lid="128" opt="7" ver="17">
+<funcs>
+<func id="16" nam="TC_005_29_reportTest" scp="2" src="1"/>
+<func id="13" nam="TC_005_26_reportTest" scp="2" src="1"/>
+<func id="14" nam="TC_005_27_reportTest" scp="2" src="1"/>
+</funcs>
+<types/>
+<vars>
+<var id="2" nam="ext_output1" scp="8" src="-1" tc="10" tmd="40532396646334464"/>
+<var id="9" nam="ext_output2" scp="8" src="-1" tc="10" tmd="40532396646334464"/>
+<var id="42" nam="output2" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="43" nam="input2" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="44" nam="output1" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="45" nam="input1" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+</vars>
+<defines>
+<define id="124" nam="HAVE_FLOAT" val="1"/>
+<define id="125" nam="HAVE_FLOAT64" val="1"/>
+<define id="126" nam="HAVE_INT64" val="1"/>
+<define id="123" nam="HAVE_BOOL" val="1"/>
+<define id="127" nam="HAVE_INT8" val="1"/>
+</defines>
+</mod>
+<funcs>
+<func id="16" nam="TC_005_29_reportTest">
+<ret id="39" tc="35"/>
+<calls>
+<call id="13" use="304"/>
+<call id="14" use="304"/>
+</calls>
+<vars>
+<var id="42" ips="4" pas="4" scp="2"/>
+<var id="43" ips="2" pas="2" scp="2"/>
+<var id="44" ips="4" pas="4" scp="2"/>
+<var id="45" ips="2" pas="2" scp="2"/>
+<var crf="13,14" id="2" ips="4" pas="1" scp="8"/>
+<var crf="13,14" id="9" ips="4" pas="1" scp="8"/>
+</vars>
+</func>
+<func id="13" nam="TC_005_26_reportTest">
+<ret id="30" tc="35"/>
+<vars>
+<var id="9" ips="4" pas="1" scp="8"/>
+<var id="2" ips="4" pas="1" scp="8"/>
+</vars>
+</func>
+<func id="14" nam="TC_005_27_reportTest">
+<ret id="33" tc="35"/>
+<vars>
+<var id="9" ips="4" pas="1" scp="8"/>
+<var id="2" ips="4" pas="1" scp="8"/>
+</vars>
+</func>
+</funcs>
+</interface>
+		<properties directory="E:\Projects\TESSY_TQP\tessy\work\00000bf3\00000cae" config="$(PROJECTROOT)\tessy\config\qts_gcc_i386_configuration.xml" project_root="E:\Projects\TESSY_TQP" project_description="" environment="GNU GCC Eclipse CDT (Default)" kind_of_test="UNIT">
+			<source file="$(PROJECTROOT)\Source\Report\tessy_qts_report_tests_2.c" compiler_options=" -DHAVE_BOOL -DHAVE_INT8 -DHAVE_INT64 -DHAVE_FLOAT -DHAVE_FLOAT64 -I$(PROJECTROOT)\Source\Include" cvs_revision="8" cvs_author="Tobias Bochtler" cvs_date="18.09.2013" sha1="b1aa52f8a59c9ad02b6d753111566de794042067"/>
+			<header file="E:\Projects\TESSY_TQP\Source\Include\tessy_qts_types.h" sha1="3bdaaa8004f728dac64f854ea5ca4fdc61fc342c"/>
+		</properties>
+		<attributes>
+			<attribute name="Float Eval Epsilon" value="0.0"/>
+			<attribute name="Float Precision" value="8"/>
+		</attributes>
+	</summary>
+	<module>
+	</module>
+	<usercode>
+		<declarations body="// This is the line 1 of the Declarations&#10;// This is the line 2 of the Declarations&#10;// This is the line 3 of the Declarations&#10;"/>
+		<definitions body="// This is the line 1 of the Definitions&#10;// This is the line 2 of the Definitions&#10;// This is the line 3 of the Definitions&#10;"/>
+	</usercode>
+	<testobject success="notok">
+		<prologs_epilogs>
+			<prolog type="source" text="// This is the Testobject prolog line 1&#10;// This is the Testobject prolog line 2&#10;// This is the Testobject prolog line 3&#10;"/>
+			<epilog type="source" text="// This is the Testobject epilog line 1&#10;// This is the Testobject epilog line 2&#10;// This is the Testobject epilog line 3&#10;"/>
+		</prologs_epilogs>
+		<testcase id="1" dbid="3500" success="notok" testdata_success="notok" calltrace_success="ok">
+			<prologs_epilogs>
+				<prolog type="source" text="// This is the Testcase prolog line 1&#10;// This is the Testcase prolog line 2&#10;// This is the Testcase prolog line 3&#10;&#10;"/>
+				<epilog type="source" text="// This is the Testcase epilog line 1&#10;// This is the Testcase epilog line 2&#10;// This is the Testcase epilog line 3&#10;&#10;"/>
+			</prologs_epilogs>
+<teststep id="1.1" dbid="3501" success="notok" testdata_success="notok" calltrace_success="ok" repeat_count="1">
+	<prologs_epilogs>
+		<prolog type="source" text="// This is the Teststep prolog line 1&#10;// This is the Teststep prolog line 2&#10;// This is the Teststep prolog line 3&#10;&#10;"/>
+		<epilog type="source" text="// This is the Teststep epilog line 1&#10;// This is the Teststep epilog line 2&#10;// This is the Teststep epilog line 3&#10;&#10;"/>
+	</prologs_epilogs>
+	<call_trace teststep_id="3501" success="ok">
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+	</call_trace>
+	<inputs>
+		<input name="input1" unit="" id="45" value="2" use="1"/>
+		<input name="input2" unit="" id="43" value="3" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="44" expected_value="3" actual_value="2" success="notok" use="1"/>
+		<result name="output2" unit="" id="42" expected_value="3" actual_value="3" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+	</testobject>
+</report>

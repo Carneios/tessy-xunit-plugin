@@ -1,0 +1,141 @@
+<report xml_version="3" tessy_version="3.2.6" testobject_name="TC_005_12_reportTest" success="notok">
+	<summary>
+		<info project_name="QTS Tests" module_name="005_ReportTests_1" testobject_name="TC_005_12_reportTest" date="2015-06-26" time="09:35:18+0200" user="ak" host="PC-ITW"/>
+		<coverage instrumentation="Test Object Only">
+			<c1 name="Branch Coverage (C1)" success="notok" total="7" reached="5" notreached="2" percentage="71.42"/>
+		</coverage>
+		<comments>
+			<comment type="module" name="005_ReportTests_1" comment="The ReportTest1 tests are tests without usercode.&#10;There is no instrumentation except the tests 12 - 14 (C1-Instrumentation)"/>
+		</comments>
+		<statistic total="5" ok="1" ok_list="4.1" notok="2" notok_list="1.1;2.1" notexecuted="2" notexecuted_list="3.1;5.1"/>
+<interface>
+<mod id="9cf232f1-1121-431c-b004-c7097ec61b46" lid="78" opt="7" ver="17">
+<funcs>
+<func id="14" nam="TC_005_12_reportTest" scp="2" src="1"/>
+<func id="6" nam="exfunc6" scp="8" src="0" use="1"/>
+</funcs>
+<types/>
+<vars>
+<var id="28" nam="in_out3" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="29" nam="in_out2" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="15" nam="output2" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="7" nam="input1" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+</vars>
+<defines>
+<define id="74" nam="HAVE_FLOAT" val="1"/>
+<define id="75" nam="HAVE_FLOAT64" val="1"/>
+<define id="76" nam="HAVE_INT64" val="1"/>
+<define id="73" nam="HAVE_BOOL" val="1"/>
+<define id="77" nam="HAVE_INT8" val="1"/>
+</defines>
+</mod>
+<funcs>
+<func id="14" nam="TC_005_12_reportTest">
+<ret id="42" tc="35"/>
+<calls>
+<call id="6" use="257"/>
+</calls>
+<vars>
+<var id="28" ips="8" pas="8" scp="2"/>
+<var id="29" ips="8" pas="8" scp="2"/>
+<var id="15" ips="4" pas="4" scp="2"/>
+<var id="7" ips="2" pas="2" scp="2"/>
+</vars>
+</func>
+<func id="6" nam="exfunc6">
+<ret id="8" tc="35"/>
+<parms>
+<parm id="9" ips="1" nam="a" pas="1" tc="10" tmd="40532396646334464"/>
+</parms>
+</func>
+</funcs>
+</interface>
+		<properties directory="E:\Projects\TESSY_TQP\tessy\work\00000bf3\00000bf5" config="$(PROJECTROOT)\tessy\config\qts_gcc_i386_configuration.xml" project_root="E:\Projects\TESSY_TQP" project_description="" environment="GNU GCC Eclipse CDT (Default)" kind_of_test="UNIT">
+			<source file="$(PROJECTROOT)\Source\Report\tessy_qts_report_tests_1.c" compiler_options=" -DHAVE_BOOL -DHAVE_INT8 -DHAVE_INT64 -DHAVE_FLOAT -DHAVE_FLOAT64 -I$(PROJECTROOT)\Source\Include" cvs_revision="8" cvs_author="Tobias Bochtler" cvs_date="17.09.2013" sha1="cf57430f98a94fdaa990028b284bdefdfe46ef0b"/>
+			<header file="E:\Projects\TESSY_TQP\Source\Include\tessy_qts_types.h" sha1="3bdaaa8004f728dac64f854ea5ca4fdc61fc342c"/>
+		</properties>
+		<attributes>
+			<attribute name="Float Eval Epsilon" value="0.0"/>
+			<attribute name="Float Precision" value="8"/>
+		</attributes>
+	</summary>
+	<module>
+	</module>
+	<usercode>
+		<stubs>
+			<stub name="exfunc6" head="void exfunc6(signed long a)" body="$stub void exfunc6(signed long a) {&#10;&#10;&#9;/* empty stub code created by TESSY */&#10;}&#10;"/>
+		</stubs>
+	</usercode>
+	<testobject success="notok">
+		<stubs>
+			<stub name="exfunc6" head="void exfunc6(signed long a)" body="/* empty stub code created by TESSY */"/>
+		</stubs>
+		<testcase id="1" dbid="3196" success="notok" testdata_success="notok" calltrace_success="notok">
+<teststep id="1.1" dbid="3197" success="notok" testdata_success="notok" calltrace_success="notok" repeat_count="3">
+	<call_trace teststep_id="3197" success="notok">
+		<trace_entry actual="exfunc6" actual_count="2" expected="exfunc6" expected_count="1" success="notok"/>
+	</call_trace>
+	<inputs>
+		<input name="in_out2" unit="" id="29" value="1" use="1"/>
+		<input name="in_out3" unit="" id="28" value="1" use="1"/>
+		<input name="input1" unit="" id="7" value="1" use="1"/>
+	</inputs>
+	<results>
+		<result name="in_out2" unit="" id="29" expected_value="2" actual_value="2" success="ok" use="1"/>
+		<result name="in_out3" unit="" id="28" expected_value="0" actual_value="0" success="ok" use="1"/>
+		<result name="output2" unit="" id="15" expected_value="3" actual_value="1" success="notok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="2" dbid="3198" success="notok" testdata_success="notok" calltrace_success="ok">
+<teststep id="2.1" dbid="3199" success="notok" testdata_success="notok" calltrace_success="ok" repeat_count="31">
+	<call_trace teststep_id="3199" success="ok">
+		<trace_entry actual="exfunc6" actual_count="15" expected="exfunc6" expected_count="15" success="ok"/>
+	</call_trace>
+	<inputs>
+		<input name="in_out2" unit="" id="29" value="3" use="1"/>
+		<input name="in_out3" unit="" id="28" value="1" use="1"/>
+		<input name="input1" unit="" id="7" value="1" use="1"/>
+	</inputs>
+	<results>
+		<result name="in_out2" unit="" id="29" expected_value="5" actual_value="2" success="notok" use="1"/>
+		<result name="in_out3" unit="" id="28" expected_value="2" actual_value="2" success="ok" use="1"/>
+		<result name="output2" unit="" id="15" expected_value="5" actual_value="1" success="notok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="3" dbid="3200" success="notexecuted">
+			<teststep id="3.1" dbid="3201" success="notexecuted" repeat_count="5">
+				<inputs>
+				</inputs>
+				<results>
+				</results>
+			</teststep>
+		</testcase>
+		<testcase id="4" dbid="3202" success="ok" testdata_success="ok" calltrace_success="ok">
+<teststep id="4.1" dbid="3203" success="ok" testdata_success="ok" calltrace_success="ok" repeat_count="9">
+	<call_trace teststep_id="3203" success="ok">
+		<trace_entry actual="exfunc6" actual_count="9" expected="exfunc6" expected_count="9" success="ok"/>
+	</call_trace>
+	<inputs>
+		<input name="in_out2" unit="" id="29" value="18" use="1"/>
+		<input name="in_out3" unit="" id="28" value="4" use="1"/>
+		<input name="input1" unit="" id="7" value="2" use="1"/>
+	</inputs>
+	<results>
+		<result name="in_out2" unit="" id="29" expected_value="9" actual_value="9" success="ok" use="1"/>
+		<result name="in_out3" unit="" id="28" expected_value="13" actual_value="13" success="ok" use="1"/>
+		<result name="output2" unit="" id="15" expected_value="1" actual_value="1" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="5" dbid="3204" success="notexecuted">
+			<teststep id="5.1" dbid="3205" success="notexecuted" repeat_count="3">
+				<inputs>
+				</inputs>
+				<results>
+				</results>
+			</teststep>
+		</testcase>
+	</testobject>
+</report>

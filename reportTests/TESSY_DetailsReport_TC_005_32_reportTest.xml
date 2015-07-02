@@ -1,0 +1,235 @@
+<report xml_version="3" tessy_version="3.2.6" testobject_name="TC_005_32_reportTest" success="notok">
+	<summary>
+		<info project_name="QTS Tests" module_name="005_ReportTests_2" testobject_name="TC_005_32_reportTest" date="2015-06-26" time="09:32:53+0200" user="ak" host="PC-ITW"/>
+		<comments>
+			<comment type="module" name="005_ReportTests_2" comment="The ReportTest2 tests are tests with usercode.&#10;There is no instrumentation."/>
+		</comments>
+		<statistic total="8" ok="4" ok_list="2.1;5.1;6.1;6.2;8.1;8.2;8.3" notok="2" notok_list="1.1;1.2;3.1" notexecuted="2" notexecuted_list="4.1;4.2;4.3;7.1"/>
+<interface>
+<mod id="7d3c994d-e9bc-4401-a144-cc9d91757e8f" lid="128" opt="7" ver="17">
+<funcs>
+<func id="19" nam="TC_005_32_reportTest" scp="2" src="1"/>
+<func id="14" nam="TC_005_27_reportTest" scp="2" src="1"/>
+</funcs>
+<types/>
+<vars>
+<var id="2" nam="ext_output1" scp="8" src="-1" tc="10" tmd="40532396646334464"/>
+<var id="9" nam="ext_output2" scp="8" src="-1" tc="10" tmd="40532396646334464"/>
+<var id="42" nam="output2" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="43" nam="input2" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="44" nam="output1" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="45" nam="input1" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+</vars>
+<defines>
+<define id="124" nam="HAVE_FLOAT" val="1"/>
+<define id="125" nam="HAVE_FLOAT64" val="1"/>
+<define id="126" nam="HAVE_INT64" val="1"/>
+<define id="123" nam="HAVE_BOOL" val="1"/>
+<define id="127" nam="HAVE_INT8" val="1"/>
+</defines>
+</mod>
+<funcs>
+<func id="19" nam="TC_005_32_reportTest">
+<ret id="56" tc="35"/>
+<calls>
+<call id="14" use="304"/>
+</calls>
+<vars>
+<var id="42" ips="4" pas="4" scp="2"/>
+<var id="43" ips="2" pas="2" scp="2"/>
+<var id="44" ips="4" pas="4" scp="2"/>
+<var id="45" ips="2" pas="2" scp="2"/>
+<var crf="14" id="2" ips="4" pas="1" scp="8"/>
+<var crf="14" id="9" ips="4" pas="1" scp="8"/>
+</vars>
+</func>
+<func id="14" nam="TC_005_27_reportTest">
+<ret id="33" tc="35"/>
+<vars>
+<var id="9" ips="4" pas="1" scp="8"/>
+<var id="2" ips="4" pas="1" scp="8"/>
+</vars>
+</func>
+</funcs>
+</interface>
+		<properties directory="E:\Projects\TESSY_TQP\tessy\work\00000bf3\00000cae" config="$(PROJECTROOT)\tessy\config\qts_gcc_i386_configuration.xml" project_root="E:\Projects\TESSY_TQP" project_description="" environment="GNU GCC Eclipse CDT (Default)" kind_of_test="UNIT">
+			<source file="$(PROJECTROOT)\Source\Report\tessy_qts_report_tests_2.c" compiler_options=" -DHAVE_BOOL -DHAVE_INT8 -DHAVE_INT64 -DHAVE_FLOAT -DHAVE_FLOAT64 -I$(PROJECTROOT)\Source\Include" cvs_revision="8" cvs_author="Tobias Bochtler" cvs_date="18.09.2013" sha1="b1aa52f8a59c9ad02b6d753111566de794042067"/>
+			<header file="E:\Projects\TESSY_TQP\Source\Include\tessy_qts_types.h" sha1="3bdaaa8004f728dac64f854ea5ca4fdc61fc342c"/>
+		</properties>
+		<attributes>
+			<attribute name="Float Eval Epsilon" value="0.0"/>
+			<attribute name="Float Precision" value="8"/>
+		</attributes>
+	</summary>
+	<module>
+	</module>
+	<testobject success="notok">
+		<prologs_epilogs>
+			<epilog type="source" text="// This is the Testobject epilog line 1&#10;// This is the Testobject epilog line 2&#10;// This is the Testobject epilog line 3&#10;"/>
+		</prologs_epilogs>
+		<testcase id="1" dbid="3528" name="test1" description="Multiline description line 1&#10;Multiline description line 2&#10;Multiline description line 3&#10;Multiline description line 4" specification="Multiline specification line 1&#10;Multiline specification line 2&#10;Multiline specification line 3&#10;Multiline specification line 4" success="notok" testdata_success="notok">
+			<prologs_epilogs>
+				<prolog type="source" text="// This is the Testcase prolog line 1&#10;// This is the Testcase prolog line 2&#10;// This is the Testcase prolog line 3&#10;&#10;"/>
+			</prologs_epilogs>
+<teststep id="1.1" dbid="3529" success="notok" testdata_success="notok" repeat_count="3">
+	<inputs>
+		<input name="input1" unit="" id="45" value="3" use="1"/>
+		<input name="input2" unit="" id="43" value="4" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="44" expected_value="2" actual_value="3" success="notok" use="1"/>
+		<result name="output2" unit="" id="42" expected_value="4" actual_value="4" success="ok" use="1"/>
+	</results>
+</teststep>
+<teststep id="1.2" dbid="3530" success="notok" testdata_success="notok" repeat_count="6">
+	<inputs>
+		<input name="input1" unit="" id="45" value="3" use="1"/>
+		<input name="input2" unit="" id="43" value="4" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="44" expected_value="5" actual_value="3" success="notok" use="1"/>
+		<result name="output2" unit="" id="42" expected_value="4" actual_value="4" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="2" dbid="3531" name="test2" description="Multiline description line 1&#10;Multiline description line 2&#10;Multiline description line 3&#10;Multiline description line 4" specification="Multiline specification line 1&#10;Multiline specification line 2&#10;Multiline specification line 3&#10;Multiline specification line 4" success="ok" testdata_success="ok">
+			<prologs_epilogs>
+				<prolog type="source" text="// This is the Testcase prolog line 1&#10;// This is the Testcase prolog line 2&#10;// This is the Testcase prolog line 3&#10;&#10;"/>
+			</prologs_epilogs>
+<teststep id="2.1" dbid="3532" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="input1" unit="" id="45" value="3" use="1"/>
+		<input name="input2" unit="" id="43" value="4" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="44" expected_value="3" actual_value="3" success="ok" use="1"/>
+		<result name="output2" unit="" id="42" expected_value="4" actual_value="4" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="3" dbid="3533" name="test3" description="Multiline description line 1&#10;Multiline description line 2&#10;Multiline description line 3&#10;Multiline description line 4" specification="Multiline specification line 1&#10;Multiline specification line 2&#10;Multiline specification line 3&#10;Multiline specification line 4" success="notok" testdata_success="notok">
+			<prologs_epilogs>
+				<prolog type="source" text="// This is the Testcase prolog line 1&#10;// This is the Testcase prolog line 2&#10;// This is the Testcase prolog line 3&#10;&#10;"/>
+			</prologs_epilogs>
+<teststep id="3.1" dbid="3534" success="notok" testdata_success="notok" repeat_count="21">
+	<inputs>
+		<input name="input1" unit="" id="45" value="3" use="1"/>
+		<input name="input2" unit="" id="43" value="4" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="44" expected_value="1" actual_value="3" success="notok" use="1"/>
+		<result name="output2" unit="" id="42" expected_value="4" actual_value="4" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="4" dbid="3535" name="test4" description="Multiline description line 1&#10;Multiline description line 2&#10;Multiline description line 3&#10;Multiline description line 4" specification="Multiline specification line 1&#10;Multiline specification line 2&#10;Multiline specification line 3&#10;Multiline specification line 4" success="notexecuted">
+			<prologs_epilogs>
+				<prolog type="source" text="// This is the Testcase prolog line 1&#10;// This is the Testcase prolog line 2&#10;// This is the Testcase prolog line 3&#10;&#10;"/>
+			</prologs_epilogs>
+			<teststep id="4.1" dbid="3536" success="notexecuted" repeat_count="31">
+				<inputs>
+				</inputs>
+				<results>
+				</results>
+			</teststep>
+			<teststep id="4.2" dbid="3537" success="notexecuted" repeat_count="51">
+				<inputs>
+				</inputs>
+				<results>
+				</results>
+			</teststep>
+			<teststep id="4.3" dbid="3538" success="notexecuted" repeat_count="11">
+				<inputs>
+				</inputs>
+				<results>
+				</results>
+			</teststep>
+		</testcase>
+		<testcase id="5" dbid="3539" name="test5" description="Multiline description line 1&#10;Multiline description line 2&#10;Multiline description line 3&#10;Multiline description line 4" specification="Multiline specification line 1&#10;Multiline specification line 2&#10;Multiline specification line 3&#10;Multiline specification line 4" success="ok" testdata_success="ok">
+			<prologs_epilogs>
+				<prolog type="source" text="// This is the Testcase prolog line 1&#10;// This is the Testcase prolog line 2&#10;// This is the Testcase prolog line 3&#10;&#10;"/>
+			</prologs_epilogs>
+<teststep id="5.1" dbid="3540" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="input1" unit="" id="45" value="3" use="1"/>
+		<input name="input2" unit="" id="43" value="4" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="44" expected_value="3" actual_value="3" success="ok" use="1"/>
+		<result name="output2" unit="" id="42" expected_value="4" actual_value="4" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="6" dbid="3541" name="test6" description="Multiline description line 1&#10;Multiline description line 2&#10;Multiline description line 3&#10;Multiline description line 4" specification="Multiline specification line 1&#10;Multiline specification line 2&#10;Multiline specification line 3&#10;Multiline specification line 4" success="ok" testdata_success="ok">
+			<prologs_epilogs>
+				<prolog type="source" text="// This is the Testcase prolog line 1&#10;// This is the Testcase prolog line 2&#10;// This is the Testcase prolog line 3&#10;&#10;"/>
+			</prologs_epilogs>
+<teststep id="6.1" dbid="3542" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="input1" unit="" id="45" value="3" use="1"/>
+		<input name="input2" unit="" id="43" value="4" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="44" expected_value="3" actual_value="3" success="ok" use="1"/>
+		<result name="output2" unit="" id="42" expected_value="4" actual_value="4" success="ok" use="1"/>
+	</results>
+</teststep>
+<teststep id="6.2" dbid="3543" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="input1" unit="" id="45" value="3" use="1"/>
+		<input name="input2" unit="" id="43" value="4" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="44" expected_value="3" actual_value="3" success="ok" use="1"/>
+		<result name="output2" unit="" id="42" expected_value="4" actual_value="4" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="7" dbid="3544" name="test7" description="Multiline description line 1&#10;Multiline description line 2&#10;Multiline description line 3&#10;Multiline description line 4" specification="Multiline specification line 1&#10;Multiline specification line 2&#10;Multiline specification line 3&#10;Multiline specification line 4" success="notexecuted">
+			<prologs_epilogs>
+				<prolog type="source" text="// This is the Testcase prolog line 1&#10;// This is the Testcase prolog line 2&#10;// This is the Testcase prolog line 3&#10;&#10;"/>
+			</prologs_epilogs>
+			<teststep id="7.1" dbid="3545" success="notexecuted" repeat_count="1">
+				<inputs>
+				</inputs>
+				<results>
+				</results>
+			</teststep>
+		</testcase>
+		<testcase id="8" dbid="3546" name="test8" description="Multiline description line 1&#10;Multiline description line 2&#10;Multiline description line 3&#10;Multiline description line 4" specification="Multiline specification line 1&#10;Multiline specification line 2&#10;Multiline specification line 3&#10;Multiline specification line 4" success="ok" testdata_success="ok">
+			<prologs_epilogs>
+				<prolog type="source" text="// This is the Testcase prolog line 1&#10;// This is the Testcase prolog line 2&#10;// This is the Testcase prolog line 3&#10;&#10;"/>
+			</prologs_epilogs>
+<teststep id="8.1" dbid="3547" success="ok" testdata_success="ok" repeat_count="11">
+	<inputs>
+		<input name="input1" unit="" id="45" value="3" use="1"/>
+		<input name="input2" unit="" id="43" value="4" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="44" expected_value="3" actual_value="3" success="ok" use="1"/>
+		<result name="output2" unit="" id="42" expected_value="4" actual_value="4" success="ok" use="1"/>
+	</results>
+</teststep>
+<teststep id="8.2" dbid="3548" success="ok" testdata_success="ok" repeat_count="55">
+	<inputs>
+		<input name="input1" unit="" id="45" value="3" use="1"/>
+		<input name="input2" unit="" id="43" value="4" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="44" expected_value="3" actual_value="3" success="ok" use="1"/>
+		<result name="output2" unit="" id="42" expected_value="4" actual_value="4" success="ok" use="1"/>
+	</results>
+</teststep>
+<teststep id="8.3" dbid="3549" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+		<input name="input1" unit="" id="45" value="3" use="1"/>
+		<input name="input2" unit="" id="43" value="4" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="44" expected_value="3" actual_value="3" success="ok" use="1"/>
+		<result name="output2" unit="" id="42" expected_value="4" actual_value="4" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+	</testobject>
+</report>

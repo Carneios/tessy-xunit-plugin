@@ -1,0 +1,95 @@
+<report xml_version="3" tessy_version="3.2.6" testobject_name="TC_005_06_reportTest" success="notok">
+	<summary>
+		<info project_name="QTS Tests" module_name="005_ReportTests_1" testobject_name="TC_005_06_reportTest" date="2015-06-26" time="09:29:11+0200" user="ak" host="PC-ITW"/>
+		<comments>
+			<comment type="module" name="005_ReportTests_1" comment="The ReportTest1 tests are tests without usercode.&#10;There is no instrumentation except the tests 12 - 14 (C1-Instrumentation)"/>
+		</comments>
+		<statistic total="1" ok="0" ok_list="" notok="1" notok_list="1.1;1.2;1.3;1.4" notexecuted="0" notexecuted_list=""/>
+<interface>
+<mod id="9cf232f1-1121-431c-b004-c7097ec61b46" lid="78" opt="7" ver="17">
+<funcs>
+<func id="8" nam="TC_005_06_reportTest" scp="2" src="1"/>
+</funcs>
+<types/>
+<vars>
+<var id="13" nam="output4" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="14" nam="output3" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="15" nam="output2" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="5" nam="output1" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+</vars>
+<defines>
+<define id="74" nam="HAVE_FLOAT" val="1"/>
+<define id="75" nam="HAVE_FLOAT64" val="1"/>
+<define id="76" nam="HAVE_INT64" val="1"/>
+<define id="73" nam="HAVE_BOOL" val="1"/>
+<define id="77" nam="HAVE_INT8" val="1"/>
+</defines>
+</mod>
+<funcs>
+<func id="8" nam="TC_005_06_reportTest">
+<ret id="12" tc="35"/>
+<vars>
+<var id="13" ips="4" pas="4" scp="2"/>
+<var id="14" ips="4" pas="4" scp="2"/>
+<var id="15" ips="4" pas="4" scp="2"/>
+<var id="5" ips="4" pas="4" scp="2"/>
+</vars>
+</func>
+</funcs>
+</interface>
+		<properties directory="E:\Projects\TESSY_TQP\tessy\work\00000bf3\00000bf5" config="$(PROJECTROOT)\tessy\config\qts_gcc_i386_configuration.xml" project_root="E:\Projects\TESSY_TQP" project_description="" environment="GNU GCC Eclipse CDT (Default)" kind_of_test="UNIT">
+			<source file="$(PROJECTROOT)\Source\Report\tessy_qts_report_tests_1.c" compiler_options=" -DHAVE_BOOL -DHAVE_INT8 -DHAVE_INT64 -DHAVE_FLOAT -DHAVE_FLOAT64 -I$(PROJECTROOT)\Source\Include" cvs_revision="8" cvs_author="Tobias Bochtler" cvs_date="17.09.2013" sha1="cf57430f98a94fdaa990028b284bdefdfe46ef0b"/>
+			<header file="E:\Projects\TESSY_TQP\Source\Include\tessy_qts_types.h" sha1="3bdaaa8004f728dac64f854ea5ca4fdc61fc342c"/>
+		</properties>
+		<attributes>
+			<attribute name="Float Eval Epsilon" value="0.0"/>
+			<attribute name="Float Precision" value="8"/>
+		</attributes>
+	</summary>
+	<module>
+	</module>
+	<testobject success="notok">
+		<testcase id="1" dbid="3124" name="Test 6" specification="Single line specification" success="notok" testdata_success="notok">
+<teststep id="1.1" dbid="3125" success="notok" testdata_success="notok" repeat_count="1">
+	<inputs>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="5" expected_value="9" actual_value="0" success="notok" use="1"/>
+		<result name="output2" unit="" id="15" expected_value="9" actual_value="1" success="notok" use="1"/>
+		<result name="output3" unit="" id="14" expected_value="9" actual_value="2" success="notok" use="1"/>
+		<result name="output4" unit="" id="13" expected_value="9" actual_value="3" success="notok" use="1"/>
+	</results>
+</teststep>
+<teststep id="1.2" dbid="3126" success="notok" testdata_success="notok" repeat_count="1">
+	<inputs>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="5" expected_value="8" actual_value="0" success="notok" use="1"/>
+		<result name="output2" unit="" id="15" expected_value="8" actual_value="1" success="notok" use="1"/>
+		<result name="output3" unit="" id="14" expected_value="8" actual_value="2" success="notok" use="1"/>
+		<result name="output4" unit="" id="13" expected_value="8" actual_value="3" success="notok" use="1"/>
+	</results>
+</teststep>
+<teststep id="1.3" dbid="3127" success="notok" testdata_success="notok" repeat_count="1">
+	<inputs>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="5" expected_value="6" actual_value="0" success="notok" use="1"/>
+		<result name="output2" unit="" id="15" expected_value="6" actual_value="1" success="notok" use="1"/>
+		<result name="output3" unit="" id="14" expected_value="6" actual_value="2" success="notok" use="1"/>
+		<result name="output4" unit="" id="13" expected_value="6" actual_value="3" success="notok" use="1"/>
+	</results>
+</teststep>
+<teststep id="1.4" dbid="3128" success="notok" testdata_success="notok" repeat_count="1">
+	<inputs>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="5" expected_value="5" actual_value="0" success="notok" use="1"/>
+		<result name="output2" unit="" id="15" expected_value="5" actual_value="1" success="notok" use="1"/>
+		<result name="output3" unit="" id="14" expected_value="5" actual_value="2" success="notok" use="1"/>
+		<result name="output4" unit="" id="13" expected_value="5" actual_value="3" success="notok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+	</testobject>
+</report>

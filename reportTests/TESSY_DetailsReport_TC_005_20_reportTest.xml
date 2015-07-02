@@ -1,0 +1,108 @@
+<report xml_version="3" tessy_version="3.2.6" testobject_name="TC_005_20_reportTest" success="ok">
+	<summary>
+		<info project_name="QTS Tests" module_name="005_ReportTests_2" testobject_name="TC_005_20_reportTest" date="2015-06-26" time="09:31:00+0200" user="ak" host="PC-ITW"/>
+		<comments>
+			<comment type="module" name="005_ReportTests_2" comment="The ReportTest2 tests are tests with usercode.&#10;There is no instrumentation."/>
+		</comments>
+		<statistic total="4" ok="4" ok_list="1.1;2.1;2.2;2.3;3.1;4.1" notok="0" notok_list="" notexecuted="0" notexecuted_list=""/>
+<interface>
+<mod id="7d3c994d-e9bc-4401-a144-cc9d91757e8f" lid="128" opt="7" ver="17">
+<funcs>
+<func id="7" nam="TC_005_20_reportTest" scp="2" src="1"/>
+</funcs>
+<types/>
+<vars>
+<var id="9" nam="ext_output2" scp="8" src="-1" tc="10" tmd="40532396646334464"/>
+<var id="2" nam="ext_output1" scp="8" src="-1" tc="10" tmd="40532396646334464"/>
+</vars>
+<defines>
+<define id="124" nam="HAVE_FLOAT" val="1"/>
+<define id="125" nam="HAVE_FLOAT64" val="1"/>
+<define id="126" nam="HAVE_INT64" val="1"/>
+<define id="123" nam="HAVE_BOOL" val="1"/>
+<define id="127" nam="HAVE_INT8" val="1"/>
+</defines>
+</mod>
+<funcs>
+<func id="7" nam="TC_005_20_reportTest">
+<ret id="12" tc="35"/>
+<vars>
+<var id="9" ips="4" pas="1" scp="8"/>
+<var id="2" ips="4" pas="1" scp="8"/>
+</vars>
+</func>
+</funcs>
+</interface>
+		<properties directory="E:\Projects\TESSY_TQP\tessy\work\00000bf3\00000cae" config="$(PROJECTROOT)\tessy\config\qts_gcc_i386_configuration.xml" project_root="E:\Projects\TESSY_TQP" project_description="" environment="GNU GCC Eclipse CDT (Default)" kind_of_test="UNIT">
+			<source file="$(PROJECTROOT)\Source\Report\tessy_qts_report_tests_2.c" compiler_options=" -DHAVE_BOOL -DHAVE_INT8 -DHAVE_INT64 -DHAVE_FLOAT -DHAVE_FLOAT64 -I$(PROJECTROOT)\Source\Include" cvs_revision="8" cvs_author="Tobias Bochtler" cvs_date="18.09.2013" sha1="b1aa52f8a59c9ad02b6d753111566de794042067"/>
+			<header file="E:\Projects\TESSY_TQP\Source\Include\tessy_qts_types.h" sha1="3bdaaa8004f728dac64f854ea5ca4fdc61fc342c"/>
+		</properties>
+		<attributes>
+			<attribute name="Float Eval Epsilon" value="0.0"/>
+			<attribute name="Float Precision" value="8"/>
+		</attributes>
+	</summary>
+	<module>
+	</module>
+	<testobject success="ok">
+		<prologs_epilogs>
+			<epilog type="source" text="// This is the Testobject epilog line 1&#10;// This is the Testobject epilog line 2&#10;// This is the Testobject epilog line 3&#10;"/>
+		</prologs_epilogs>
+		<testcase id="1" dbid="3336" success="ok" testdata_success="ok">
+			<prologs_epilogs>
+				<prolog type="source" text="// This is the Testcase prolog line 1&#10;// This is the Testcase prolog line 2&#10;// This is the Testcase prolog line 3&#10;&#10;"/>
+			</prologs_epilogs>
+<teststep id="1.1" dbid="3337" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+	</inputs>
+	<results>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="2" dbid="3338" success="ok" testdata_success="ok">
+			<prologs_epilogs>
+				<prolog type="source" text="// This is the Testcase prolog line 1&#10;// This is the Testcase prolog line 2&#10;// This is the Testcase prolog line 3&#10;&#10;"/>
+			</prologs_epilogs>
+<teststep id="2.1" dbid="3339" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+	</inputs>
+	<results>
+	</results>
+</teststep>
+<teststep id="2.2" dbid="3340" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+	</inputs>
+	<results>
+	</results>
+</teststep>
+<teststep id="2.3" dbid="3341" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+	</inputs>
+	<results>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="3" dbid="3342" success="ok" testdata_success="ok">
+			<prologs_epilogs>
+				<prolog type="source" text="// This is the Testcase prolog line 1&#10;// This is the Testcase prolog line 2&#10;// This is the Testcase prolog line 3&#10;&#10;"/>
+			</prologs_epilogs>
+<teststep id="3.1" dbid="3343" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+	</inputs>
+	<results>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="4" dbid="3344" success="ok" testdata_success="ok">
+			<prologs_epilogs>
+				<prolog type="source" text="// This is the Testcase prolog line 1&#10;// This is the Testcase prolog line 2&#10;// This is the Testcase prolog line 3&#10;&#10;"/>
+			</prologs_epilogs>
+<teststep id="4.1" dbid="3345" success="ok" testdata_success="ok" repeat_count="1">
+	<inputs>
+	</inputs>
+	<results>
+	</results>
+</teststep>
+		</testcase>
+	</testobject>
+</report>

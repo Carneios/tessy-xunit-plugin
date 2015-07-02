@@ -1,0 +1,152 @@
+<report xml_version="3" tessy_version="3.2.6" testobject_name="TC_005_48_reportTest" success="notok">
+	<summary>
+		<info project_name="QTS Tests" module_name="005_ReportTests_4" testobject_name="TC_005_48_reportTest" date="2015-06-26" time="09:34:46+0200" user="ak" host="PC-ITW"/>
+		<comments>
+			<comment type="module" name="005_ReportTests_4" comment="The ReportTest4 tests are tests with evalmacros and modul specific usercode.&#10;There is no instrumentation."/>
+		</comments>
+		<statistic total="3" ok="2" ok_list="1.1;3.1" notok="1" notok_list="2.1" notexecuted="0" notexecuted_list=""/>
+<interface>
+<mod id="303027ca-dca4-4bea-b295-76309ac5f6ee" lid="28" opt="7" ver="17">
+<funcs>
+<func id="3" nam="TC_005_48_reportTest" scp="2" src="1"/>
+<func id="4" nam="foo1" scp="8" src="0" use="1"/>
+<func id="5" nam="foo2" scp="8" src="0" use="1"/>
+<func id="6" nam="foo3" scp="8" src="0" use="1"/>
+</funcs>
+<types/>
+<vars>
+<var id="7" nam="output3" scp="2" src="1" tc="9" tmd="22517998136852480"/>
+<var id="3" nam="output2" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="4" nam="output1" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+</vars>
+<defines>
+<define id="24" nam="HAVE_FLOAT" val="1"/>
+<define id="25" nam="HAVE_FLOAT64" val="1"/>
+<define id="26" nam="HAVE_INT64" val="1"/>
+<define id="23" nam="HAVE_BOOL" val="1"/>
+<define id="27" nam="HAVE_INT8" val="1"/>
+</defines>
+</mod>
+<funcs>
+<func id="3" nam="TC_005_48_reportTest">
+<ret id="5" tc="35"/>
+<parms>
+<parm id="6" ips="2" nam="parameter1" pas="2" tc="10" tmd="40532396646334464"/>
+</parms>
+<calls>
+<call id="4" use="257"/>
+<call id="5" use="257"/>
+<call id="6" use="257"/>
+</calls>
+<vars>
+<var id="7" ips="8" pas="16" scp="2"/>
+<var id="3" ips="8" pas="16" scp="2"/>
+<var id="4" ips="8" pas="8" scp="2"/>
+</vars>
+</func>
+<func id="4" nam="foo1">
+<ret id="10" tc="35"/>
+<parms>
+<parm id="11" ips="1" nam="a" pas="1" tc="10" tmd="40532396646334464"/>
+</parms>
+</func>
+<func id="5" nam="foo2">
+<ret id="12" tc="35"/>
+<parms>
+<parm id="13" ips="1" nam="a" pas="1" tc="10" tmd="40532396646334464"/>
+<parm id="14" ips="1" nam="b" pas="1" tc="9" tmd="22517998136852480"/>
+</parms>
+</func>
+<func id="6" nam="foo3">
+<ret id="15" tc="35"/>
+<parms>
+<parm id="16" ips="1" nam="a" pas="1" tc="10" tmd="40532396646334464"/>
+</parms>
+</func>
+</funcs>
+</interface>
+		<properties directory="E:\Projects\TESSY_TQP\tessy\work\00000bf3\00000ecf" config="$(PROJECTROOT)\tessy\config\qts_gcc_i386_configuration.xml" project_root="E:\Projects\TESSY_TQP" project_description="" environment="GNU GCC Eclipse CDT (Default)" kind_of_test="UNIT">
+			<source file="$(PROJECTROOT)\Source\Report\tessy_qts_report_tests_4.c" compiler_options=" -DHAVE_BOOL -DHAVE_INT8 -DHAVE_INT64 -DHAVE_FLOAT -DHAVE_FLOAT64 -I$(PROJECTROOT)\Source\Include" cvs_revision="6" cvs_author="Tobias Bochtler" cvs_date="18.09.2013" sha1="b5caa8a39a6f6d73bc0dedcd8a66ecf81b4deff2"/>
+			<header file="E:\Projects\TESSY_TQP\Source\Include\tessy_qts_types.h" sha1="3bdaaa8004f728dac64f854ea5ca4fdc61fc342c"/>
+		</properties>
+		<attributes>
+			<attribute name="Float Eval Epsilon" value="0.0"/>
+			<attribute name="Float Precision" value="8"/>
+		</attributes>
+	</summary>
+	<module>
+	</module>
+	<usercode>
+		<declarations body="// This is the line 1 of the declarations&#10;"/>
+		<definitions body="// This is the line 1 of the definitions&#10;"/>
+		<stubs>
+			<stub name="foo1" head="void foo1(signed long a)" body="$stub void foo1(signed long a) {&#10;&#10;&#9;switch (TS_CURRENT_TESTCASE) {&#10;&#9;&#9;case 1:&#10;&#9;&#9;case 2:&#10;&#9;&#9;&#9;TESSY_EVAL_S32(&quot;eval stub var a&quot;, a, ==, 1);&#10;&#9;&#9;&#9;break;&#10;&#9;&#9;case 3:&#10;&#9;&#9;&#9;TESSY_EVAL_S32(&quot;eval stub var a&quot;, a, ==, 3);&#10;&#9;&#9;&#9;break;&#10;&#9;}&#10;}&#10;"/>
+			<stub name="foo2" head="void foo2(signed long a, signed short b)" body="$stub void foo2(signed long a, signed short b) {&#10;&#10;&#9;TESSY_EVAL_S8(&quot;eval var b&quot;, b, ==, 5);&#10;&#9;&#10;&#9;&#10;&#9;switch (TS_CURRENT_TESTCASE) {&#10;&#9;&#9;case 1:&#10;&#9;&#9;&#9;TESSY_EVAL_S32(&quot;eval stub var a&quot;, a, ==, 1);&#10;&#9;&#9;&#9;break;&#10;&#9;&#9;case 2:&#10;&#9;&#9;&#9;TESSY_EVAL_S32(&quot;eval stub var a&quot;, a, ==, 2);&#10;&#9;&#9;&#9;break;&#10;&#9;&#9;case 3:&#10;&#9;&#9;&#9;TESSY_EVAL_S32(&quot;eval stub var a&quot;, a, ==, 3);&#10;&#9;&#9;&#9;break;&#10;&#9;}&#10;}&#10;"/>
+			<stub name="foo3" head="void foo3(signed long a)" body="$stub void foo3(signed long a) {&#10;&#10;&#9;/* empty stub code created by TESSY */&#10;}&#10;"/>
+		</stubs>
+	</usercode>
+	<testobject success="notok">
+		<stubs>
+			<stub name="foo1" head="void foo1(signed long a)" body="switch (TS_CURRENT_TESTCASE) {&#10;&#9;case 1:&#10;&#9;case 2:&#10;&#9;&#9;TESSY_EVAL_S32(&quot;eval stub var a&quot;, a, ==, 1);&#10;&#9;&#9;break;&#10;&#9;case 3:&#10;&#9;&#9;TESSY_EVAL_S32(&quot;eval stub var a&quot;, a, ==, 3);&#10;&#9;&#9;break;&#10;}&#10;"/>
+			<stub name="foo2" head="void foo2(signed long a, signed short b)" body="TESSY_EVAL_S8(&quot;eval var b&quot;, b, ==, 5);&#10;&#10;&#10;switch (TS_CURRENT_TESTCASE) {&#10;&#9;case 1:&#10;&#9;&#9;TESSY_EVAL_S32(&quot;eval stub var a&quot;, a, ==, 1);&#10;&#9;&#9;break;&#10;&#9;case 2:&#10;&#9;&#9;TESSY_EVAL_S32(&quot;eval stub var a&quot;, a, ==, 2);&#10;&#9;&#9;break;&#10;&#9;case 3:&#10;&#9;&#9;TESSY_EVAL_S32(&quot;eval stub var a&quot;, a, ==, 3);&#10;&#9;&#9;break;&#10;}&#10;"/>
+			<stub name="foo3" head="void foo3(signed long a)" body="/* empty stub code created by TESSY */"/>
+		</stubs>
+		<testcase id="1" dbid="3802" success="ok" testdata_success="ok" calltrace_success="ok" evalmacro_success="ok">
+<teststep id="1.1" dbid="3803" success="ok" testdata_success="ok" calltrace_success="ok" evalmacro_success="ok" repeat_count="1">
+	<call_trace teststep_id="3803" success="ok">
+		<trace_entry actual="foo1" actual_count="1" expected="foo1" expected_count="1" success="ok"/>
+		<trace_entry actual="foo2" actual_count="1" expected="foo2" expected_count="1" success="ok"/>
+		<trace_entry actual="foo3" actual_count="1" expected="foo3" expected_count="1" success="ok"/>
+	</call_trace>
+	<inputs>
+		<input name="output1" unit="" id="4" value="0" use="1"/>
+		<input name="parameter1" unit="" id="6" value="1" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="4" expected_value="1" actual_value="1" success="ok" use="1"/>
+		<result name="eval stub var a" expected_value="0x00000001" actual_value="0x00000001" success="ok" evalmacro="1"/>
+		<result name="eval var b" expected_value="0x05" actual_value="0x05" success="ok" evalmacro="1"/>
+		<result name="eval stub var a" expected_value="0x00000001" actual_value="0x00000001" success="ok" evalmacro="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="2" dbid="3804" success="notok" testdata_success="ok" calltrace_success="ok" evalmacro_success="notok">
+<teststep id="2.1" dbid="3805" success="notok" testdata_success="ok" calltrace_success="ok" evalmacro_success="notok" repeat_count="1">
+	<call_trace teststep_id="3805" success="ok">
+		<trace_entry actual="foo1" actual_count="1" expected="foo1" expected_count="1" success="ok"/>
+		<trace_entry actual="foo2" actual_count="1" expected="foo2" expected_count="1" success="ok"/>
+		<trace_entry actual="foo3" actual_count="1" expected="foo3" expected_count="1" success="ok"/>
+	</call_trace>
+	<inputs>
+		<input name="output1" unit="" id="4" value="0" use="1"/>
+		<input name="parameter1" unit="" id="6" value="2" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="4" expected_value="2" actual_value="2" success="ok" use="1"/>
+		<result name="eval stub var a" expected_value="0x00000001" actual_value="0x00000002" success="notok" evalmacro="1"/>
+		<result name="eval var b" expected_value="0x05" actual_value="0x05" success="ok" evalmacro="1"/>
+		<result name="eval stub var a" expected_value="0x00000002" actual_value="0x00000002" success="ok" evalmacro="1"/>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="3" dbid="3806" success="ok" testdata_success="ok" calltrace_success="ok" evalmacro_success="ok">
+<teststep id="3.1" dbid="3807" success="ok" testdata_success="ok" calltrace_success="ok" evalmacro_success="ok" repeat_count="1">
+	<call_trace teststep_id="3807" success="ok">
+		<trace_entry actual="foo1" actual_count="1" expected="foo1" expected_count="1" success="ok"/>
+		<trace_entry actual="foo2" actual_count="1" expected="foo2" expected_count="1" success="ok"/>
+		<trace_entry actual="foo3" actual_count="1" expected="foo3" expected_count="1" success="ok"/>
+	</call_trace>
+	<inputs>
+		<input name="output1" unit="" id="4" value="0" use="1"/>
+		<input name="parameter1" unit="" id="6" value="3" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="4" expected_value="3" actual_value="3" success="ok" use="1"/>
+		<result name="eval stub var a" expected_value="0x00000003" actual_value="0x00000003" success="ok" evalmacro="1"/>
+		<result name="eval var b" expected_value="0x05" actual_value="0x05" success="ok" evalmacro="1"/>
+		<result name="eval stub var a" expected_value="0x00000003" actual_value="0x00000003" success="ok" evalmacro="1"/>
+	</results>
+</teststep>
+		</testcase>
+	</testobject>
+</report>

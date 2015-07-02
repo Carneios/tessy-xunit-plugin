@@ -1,0 +1,226 @@
+<report xml_version="3" tessy_version="3.2.6" testobject_name="TC_005_30_reportTest" success="notok">
+	<summary>
+		<info project_name="QTS Tests" module_name="005_ReportTests_2" testobject_name="TC_005_30_reportTest" date="2015-06-26" time="09:32:36+0200" user="ak" host="PC-ITW"/>
+		<comments>
+			<comment type="module" name="005_ReportTests_2" comment="The ReportTest2 tests are tests with usercode.&#10;There is no instrumentation."/>
+		</comments>
+		<statistic total="5" ok="4" ok_list="1.1;2.1;3.1;4.1" notok="1" notok_list="5.1" notexecuted="0" notexecuted_list=""/>
+<interface>
+<mod id="7d3c994d-e9bc-4401-a144-cc9d91757e8f" lid="128" opt="7" ver="17">
+<funcs>
+<func id="17" nam="TC_005_30_reportTest" scp="2" src="1"/>
+<func id="13" nam="TC_005_26_reportTest" scp="2" src="1"/>
+<func id="14" nam="TC_005_27_reportTest" scp="2" src="1"/>
+<func id="4" nam="exfunc1" scp="8" src="0" use="1"/>
+</funcs>
+<types/>
+<vars>
+<var id="2" nam="ext_output1" scp="8" src="-1" tc="10" tmd="40532396646334464"/>
+<var id="9" nam="ext_output2" scp="8" src="-1" tc="10" tmd="40532396646334464"/>
+</vars>
+<defines>
+<define id="124" nam="HAVE_FLOAT" val="1"/>
+<define id="125" nam="HAVE_FLOAT64" val="1"/>
+<define id="126" nam="HAVE_INT64" val="1"/>
+<define id="123" nam="HAVE_BOOL" val="1"/>
+<define id="127" nam="HAVE_INT8" val="1"/>
+</defines>
+</mod>
+<funcs>
+<func id="17" nam="TC_005_30_reportTest">
+<ret id="46" tc="35"/>
+<calls>
+<call id="4" use="257"/>
+<call id="13" use="304"/>
+<call id="14" use="304"/>
+</calls>
+<vars>
+<var crf="13,14" id="2" ips="4" pas="1" scp="8"/>
+<var crf="13,14" id="9" ips="4" pas="1" scp="8"/>
+</vars>
+</func>
+<func id="13" nam="TC_005_26_reportTest">
+<ret id="30" tc="35"/>
+<vars>
+<var id="9" ips="4" pas="1" scp="8"/>
+<var id="2" ips="4" pas="1" scp="8"/>
+</vars>
+</func>
+<func id="14" nam="TC_005_27_reportTest">
+<ret id="33" tc="35"/>
+<vars>
+<var id="9" ips="4" pas="1" scp="8"/>
+<var id="2" ips="4" pas="1" scp="8"/>
+</vars>
+</func>
+<func id="4" nam="exfunc1">
+<ret id="7" ips="64" pas="64" tc="10" tmd="40532396646334464"/>
+</func>
+</funcs>
+</interface>
+		<properties directory="E:\Projects\TESSY_TQP\tessy\work\00000bf3\00000cae" config="$(PROJECTROOT)\tessy\config\qts_gcc_i386_configuration.xml" project_root="E:\Projects\TESSY_TQP" project_description="" environment="GNU GCC Eclipse CDT (Default)" kind_of_test="UNIT">
+			<source file="$(PROJECTROOT)\Source\Report\tessy_qts_report_tests_2.c" compiler_options=" -DHAVE_BOOL -DHAVE_INT8 -DHAVE_INT64 -DHAVE_FLOAT -DHAVE_FLOAT64 -I$(PROJECTROOT)\Source\Include" cvs_revision="8" cvs_author="Tobias Bochtler" cvs_date="18.09.2013" sha1="b1aa52f8a59c9ad02b6d753111566de794042067"/>
+			<header file="E:\Projects\TESSY_TQP\Source\Include\tessy_qts_types.h" sha1="3bdaaa8004f728dac64f854ea5ca4fdc61fc342c"/>
+		</properties>
+		<attributes>
+			<attribute name="Float Eval Epsilon" value="0.0"/>
+			<attribute name="Float Precision" value="8"/>
+		</attributes>
+	</summary>
+	<module>
+	</module>
+	<usercode>
+		<declarations body="// This is the line 1 of the Declarations&#10;// This is the line 2 of the Declarations&#10;// This is the line 3 of the Declarations&#10;"/>
+		<stubs>
+			<stub name="exfunc1" head="signed long exfunc1()" body="$stub signed long exfunc1() {&#10;&#10;&#9;// This is the line 1 of testobject specific stubfunction&#10;&#9;// This is the line 2 of testobject specific stubfunction&#10;&#9;// This is the line 3 of testobject specific stubfunction&#10;}&#10;"/>
+		</stubs>
+	</usercode>
+	<testobject success="notok">
+		<stubs>
+			<stub name="exfunc1" head="signed long exfunc1()" body="// This is the line 1 of testobject specific stubfunction&#10;// This is the line 2 of testobject specific stubfunction&#10;// This is the line 3 of testobject specific stubfunction&#10;"/>
+		</stubs>
+		<testcase id="1" dbid="3502" description="Single line description" specification="Single line specification" success="ok" testdata_success="ok" calltrace_success="ok">
+<teststep id="1.1" dbid="3503" success="ok" testdata_success="ok" calltrace_success="ok" repeat_count="11">
+	<call_trace teststep_id="3503" success="ok">
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+	</call_trace>
+	<inputs>
+	</inputs>
+	<results>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="2" dbid="3504" description="Single line description" specification="Single line specification" success="ok" testdata_success="ok" calltrace_success="ok">
+<teststep id="2.1" dbid="3505" success="ok" testdata_success="ok" calltrace_success="ok" repeat_count="4">
+	<call_trace teststep_id="3505" success="ok">
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+	</call_trace>
+	<inputs>
+	</inputs>
+	<results>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="3" dbid="3506" description="Single line description" specification="Single line specification" success="ok" testdata_success="ok" calltrace_success="ok">
+<teststep id="3.1" dbid="3507" success="ok" testdata_success="ok" calltrace_success="ok" repeat_count="3">
+	<call_trace teststep_id="3507" success="ok">
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+	</call_trace>
+	<inputs>
+	</inputs>
+	<results>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="4" dbid="3508" description="Single line description" specification="Single line specification" success="ok" testdata_success="ok" calltrace_success="ok">
+<teststep id="4.1" dbid="3509" success="ok" testdata_success="ok" calltrace_success="ok" repeat_count="7">
+	<call_trace teststep_id="3509" success="ok">
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="TC_005_26_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="TC_005_27_reportTest" expected_count="1" success="ok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="exfunc1" expected_count="1" success="ok"/>
+	</call_trace>
+	<inputs>
+	</inputs>
+	<results>
+	</results>
+</teststep>
+		</testcase>
+		<testcase id="5" dbid="3510" description="Single line description" specification="Single line specification" success="notok" testdata_success="ok" calltrace_success="notok">
+<teststep id="5.1" dbid="3511" success="notok" testdata_success="ok" calltrace_success="notok" repeat_count="6">
+	<call_trace teststep_id="3511" success="notok">
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="*** No Call Expected ***" expected_count="0" success="notok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="TC_005_26_reportTest" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="TC_005_27_reportTest" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+		<trace_entry actual="exfunc1" actual_count="1" expected="*none*" expected_count="0" success="notok"/>
+	</call_trace>
+	<inputs>
+	</inputs>
+	<results>
+	</results>
+</teststep>
+		</testcase>
+	</testobject>
+</report>

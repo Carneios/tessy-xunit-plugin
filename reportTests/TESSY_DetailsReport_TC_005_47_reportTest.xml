@@ -1,0 +1,71 @@
+<report xml_version="3" tessy_version="3.2.6" testobject_name="TC_005_47_reportTest" success="ok">
+	<summary>
+		<info project_name="QTS Tests" module_name="005_ReportTests_4" testobject_name="TC_005_47_reportTest" date="2015-06-26" time="09:34:35+0200" user="ak" host="PC-ITW"/>
+		<comments>
+			<comment type="module" name="005_ReportTests_4" comment="The ReportTest4 tests are tests with evalmacros and modul specific usercode.&#10;There is no instrumentation."/>
+		</comments>
+		<statistic total="1" ok="1" ok_list="1.1" notok="0" notok_list="" notexecuted="0" notexecuted_list=""/>
+<interface>
+<mod id="303027ca-dca4-4bea-b295-76309ac5f6ee" lid="28" opt="7" ver="17">
+<funcs>
+<func id="2" nam="TC_005_47_reportTest" scp="2" src="1"/>
+</funcs>
+<types/>
+<vars>
+<var id="3" nam="output2" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+<var id="4" nam="output1" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+</vars>
+<defines>
+<define id="24" nam="HAVE_FLOAT" val="1"/>
+<define id="25" nam="HAVE_FLOAT64" val="1"/>
+<define id="26" nam="HAVE_INT64" val="1"/>
+<define id="23" nam="HAVE_BOOL" val="1"/>
+<define id="27" nam="HAVE_INT8" val="1"/>
+</defines>
+</mod>
+<funcs>
+<func id="2" nam="TC_005_47_reportTest">
+<ret id="1" tc="35"/>
+<parms>
+<parm id="2" ips="2" nam="parameter1" pas="2" tc="10" tmd="40532396646334464"/>
+</parms>
+<vars>
+<var id="3" ips="4" pas="16" scp="2"/>
+<var id="4" ips="8" pas="8" scp="2"/>
+</vars>
+</func>
+</funcs>
+</interface>
+		<properties directory="E:\Projects\TESSY_TQP\tessy\work\00000bf3\00000ecf" config="$(PROJECTROOT)\tessy\config\qts_gcc_i386_configuration.xml" project_root="E:\Projects\TESSY_TQP" project_description="" environment="GNU GCC Eclipse CDT (Default)" kind_of_test="UNIT">
+			<source file="$(PROJECTROOT)\Source\Report\tessy_qts_report_tests_4.c" compiler_options=" -DHAVE_BOOL -DHAVE_INT8 -DHAVE_INT64 -DHAVE_FLOAT -DHAVE_FLOAT64 -I$(PROJECTROOT)\Source\Include" cvs_revision="6" cvs_author="Tobias Bochtler" cvs_date="18.09.2013" sha1="b5caa8a39a6f6d73bc0dedcd8a66ecf81b4deff2"/>
+			<header file="E:\Projects\TESSY_TQP\Source\Include\tessy_qts_types.h" sha1="3bdaaa8004f728dac64f854ea5ca4fdc61fc342c"/>
+		</properties>
+		<attributes>
+			<attribute name="Float Eval Epsilon" value="0.0"/>
+			<attribute name="Float Precision" value="8"/>
+		</attributes>
+	</summary>
+	<module>
+	</module>
+	<usercode>
+		<declarations body="// This is the line 1 of the declarations&#10;"/>
+		<definitions body="// This is the line 1 of the definitions&#10;"/>
+	</usercode>
+	<testobject success="ok">
+		<testcase id="1" dbid="3800" success="ok" testdata_success="ok" evalmacro_success="ok">
+<teststep id="1.1" dbid="3801" success="ok" testdata_success="ok" evalmacro_success="ok" repeat_count="1">
+	<prologs_epilogs>
+		<epilog type="source" text="TESSY_EVAL_S32(&quot;eval epilog output2&quot;, output1, ==, 3);&#10;&#10;"/>
+	</prologs_epilogs>
+	<inputs>
+		<input name="output1" unit="" id="4" value="0" use="1"/>
+		<input name="parameter1" unit="" id="2" value="3" use="1"/>
+	</inputs>
+	<results>
+		<result name="output1" unit="" id="4" expected_value="3" actual_value="3" success="ok" use="1"/>
+		<result name="eval epilog output2" expected_value="0x00000003" actual_value="0x00000003" success="ok" evalmacro="1"/>
+	</results>
+</teststep>
+		</testcase>
+	</testobject>
+</report>

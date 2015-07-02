@@ -1,0 +1,57 @@
+<report xml_version="3" tessy_version="3.2.6" testobject_name="TC_005_01_reportTest" success="ok">
+	<summary>
+		<info project_name="QTS Tests" module_name="005_ReportTests_1" testobject_name="TC_005_01_reportTest" date="2015-06-26" time="09:28:23+0200" user="ak" host="PC-ITW"/>
+		<comments>
+			<comment type="module" name="005_ReportTests_1" comment="The ReportTest1 tests are tests without usercode.&#10;There is no instrumentation except the tests 12 - 14 (C1-Instrumentation)"/>
+		</comments>
+		<statistic total="1" ok="1" ok_list="1.1" notok="0" notok_list="" notexecuted="0" notexecuted_list=""/>
+<interface>
+<mod id="9cf232f1-1121-431c-b004-c7097ec61b46" lid="78" opt="7" ver="17">
+<funcs>
+<func id="2" nam="TC_005_01_reportTest" scp="2" src="1"/>
+</funcs>
+<types/>
+<vars>
+<var id="2" nam="in_out1" scp="2" src="1" tc="10" tmd="40532396646334464"/>
+</vars>
+<defines>
+<define id="74" nam="HAVE_FLOAT" val="1"/>
+<define id="75" nam="HAVE_FLOAT64" val="1"/>
+<define id="76" nam="HAVE_INT64" val="1"/>
+<define id="73" nam="HAVE_BOOL" val="1"/>
+<define id="77" nam="HAVE_INT8" val="1"/>
+</defines>
+</mod>
+<funcs>
+<func id="2" nam="TC_005_01_reportTest">
+<ret id="1" tc="35"/>
+<vars>
+<var id="2" ips="8" pas="8" scp="2"/>
+</vars>
+</func>
+</funcs>
+</interface>
+		<properties directory="E:\Projects\TESSY_TQP\tessy\work\00000bf3\00000bf5" config="$(PROJECTROOT)\tessy\config\qts_gcc_i386_configuration.xml" project_root="E:\Projects\TESSY_TQP" project_description="" environment="GNU GCC Eclipse CDT (Default)" kind_of_test="UNIT">
+			<source file="$(PROJECTROOT)\Source\Report\tessy_qts_report_tests_1.c" compiler_options=" -DHAVE_BOOL -DHAVE_INT8 -DHAVE_INT64 -DHAVE_FLOAT -DHAVE_FLOAT64 -I$(PROJECTROOT)\Source\Include" cvs_revision="8" cvs_author="Tobias Bochtler" cvs_date="17.09.2013" sha1="cf57430f98a94fdaa990028b284bdefdfe46ef0b"/>
+			<header file="E:\Projects\TESSY_TQP\Source\Include\tessy_qts_types.h" sha1="3bdaaa8004f728dac64f854ea5ca4fdc61fc342c"/>
+		</properties>
+		<attributes>
+			<attribute name="Float Eval Epsilon" value="0.0"/>
+			<attribute name="Float Precision" value="8"/>
+		</attributes>
+	</summary>
+	<module>
+	</module>
+	<testobject success="ok">
+		<testcase id="1" dbid="3100" name="Test 1" description="Single line description" specification="Single line specification" success="ok" testdata_success="ok">
+<teststep id="1.1" dbid="3101" success="ok" testdata_success="ok" repeat_count="5">
+	<inputs>
+		<input name="in_out1" unit="" id="2" value="5" use="1"/>
+	</inputs>
+	<results>
+		<result name="in_out1" unit="" id="2" expected_value="10" actual_value="10" success="ok" use="1"/>
+	</results>
+</teststep>
+		</testcase>
+	</testobject>
+</report>

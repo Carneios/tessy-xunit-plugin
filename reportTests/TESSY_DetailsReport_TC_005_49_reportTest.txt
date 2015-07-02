@@ -1,0 +1,272 @@
+TEST DETAILS REPORT
+2015-06-26, 09:35:00+0200
+TC_005_49_reportTest
+<footer>
+1
+Project
+QTS Tests
+Module
+005_ReportTests_4
+Test Object
+TC_005_49_reportTest
+Statistics
+Total Testcases
+3
+Successful
+2
+Failed
+1
+Not Executed
+0
+Module Properties
+Project Root Directory
+<path>
+Configuration File
+<path>
+Target Environment
+GNU GCC Eclipse CDT (Default)
+Kind of Test
+Unit Test
+Linker Options
+ 
+Source File(s)
+File
+$(PROJECTROOT)\Source\Report\tessy_qts_report_tests_4.c
+Revision: 6
+Author: Tobias 
+Bochtler
+Date: 18.09.2013
+Compiler Options
+-DHAVE_BOOL -DHAVE_INT8 -DHAVE_INT64 -DHAVE_FLOAT -DHAVE_FLOAT64 -I$(PROJECTROOT)\Source\Include
+Attributes
+Name
+Value
+Float Eval Epsilon
+0.0
+Float Precision
+8
+Comments/Description/Specification
+Name
+Text
+Module '005_ReportTests_4'
+The ReportTest4 tests are tests with evalmacros and modul specific usercode.
+There is no instrumentation.
+ 
+TEST DETAILS REPORT
+2015-06-26, 09:35:00+0200
+TC_005_49_reportTest
+<footer>
+2
+ 
+Usercode
+Stub Functions
+foo1
+$stub void foo1(signed long a) {
+	switch (TS_CURRENT_TESTCASE) {
+		case 1:
+		case 2:
+			TESSY_EVAL_S32("eval stub var a", a, ==, 1);
+			break;
+		case 3:
+			TESSY_EVAL_S32("eval stub var a", a, ==, 3);
+			break;
+	}
+}
+foo2
+$stub void foo2(signed long a, signed short b) {
+	TESSY_EVAL_S8("eval var b", b, ==, 5);
+	
+	
+	switch (TS_CURRENT_TESTCASE) {
+		case 1:
+			TESSY_EVAL_S32("eval stub var a", a, ==, 1);
+			break;
+		case 2:
+			TESSY_EVAL_S32("eval stub var a", a, ==, 2);
+			break;
+		case 3:
+			TESSY_EVAL_S32("eval stub var a", a, ==, 3);
+			break;
+	}
+}
+foo3
+$stub void foo3(signed long a) {
+	/* empty stub code created by TESSY */
+}
+Declarations
+// This is the line 1 of the declarations
+Definitions
+// This is the line 1 of the definitions
+TEST DETAILS REPORT
+2015-06-26, 09:35:00+0200
+TC_005_49_reportTest
+<footer>
+3
+ 
+Test Case 1
+Test Step 1.1 (Repeat Count = 1)
+Epilog
+TESSY_EVAL_S32("eval epilog output2", output1, ==, 1);
+TESSY_EVAL_S8("eval epilog output3",  output3, ==, 5);
+Name
+Input Value
+output1
+0
+parameter1
+1
+Name
+Actual Value
+Expected Value
+Result
+output1
+1
+1
+eval stub var a
+0x00000001
+0x00000001
+eval var b
+0x05
+0x05
+eval stub var a
+0x00000001
+0x00000001
+eval epilog output2
+0x00000001
+0x00000001
+eval epilog output3
+0x05
+0x05
+Test Step Call Trace
+Actual Function
+Count
+Expected Function
+Count
+Result
+foo1
+1
+foo1
+1
+foo2
+1
+foo2
+1
+foo3
+1
+foo3
+1
+ 
+ 
+ 
+Test Case 2
+Test Step 2.1 (Repeat Count = 1)
+Epilog
+TESSY_EVAL_S32("eval epilog output2", output1, ==, 1);
+TESSY_EVAL_S8("eval epilog output3",  output3, ==, 5);
+Name
+Input Value
+output1
+0
+parameter1
+2
+Name
+Actual Value
+Expected Value
+Result
+output1
+2
+2
+eval stub var a
+0x00000002
+0x00000001
+eval var b
+0x05
+0x05
+eval stub var a
+0x00000002
+0x00000002
+eval epilog output2
+0x00000002
+0x00000001
+eval epilog output3
+0x05
+0x05
+Test Step Call Trace
+Actual Function
+Count
+Expected Function
+Count
+Result
+foo1
+1
+foo1
+1
+foo2
+1
+foo2
+1
+foo3
+1
+foo3
+1
+ 
+ 
+ 
+Test Case 3
+Test Step 3.1 (Repeat Count = 1)
+Epilog
+TESSY_EVAL_S32("eval epilog output2", output1, ==, 3);
+TESSY_EVAL_S8("eval epilog output3",  output3, ==, 5);
+Name
+Input Value
+output1
+0
+parameter1
+3
+Name
+Actual Value
+Expected Value
+Result
+output1
+3
+3
+eval stub var a
+0x00000003
+0x00000003
+eval var b
+0x05
+0x05
+eval stub var a
+0x00000003
+0x00000003
+eval epilog output2
+0x00000003
+0x00000003
+eval epilog output3
+0x05
+0x05
+TEST DETAILS REPORT
+2015-06-26, 09:35:00+0200
+TC_005_49_reportTest
+<footer>
+4
+Test Step Call Trace
+Actual Function
+Count
+Expected Function
+Count
+Result
+foo1
+1
+foo1
+1
+foo2
+1
+foo2
+1
+foo3
+1
+foo3
+1
+ 
+ 
+ 

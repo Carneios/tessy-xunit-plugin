@@ -1,0 +1,370 @@
+TEST OVERVIEW REPORT
+2015-06-26, 12:10:18+0200
+Project QTS Tests
+<footer>
+1
+Summary
+Overall Test Object Results (including Coverage)
+Total Test Objects:
+49
+Successful:
+22
+Failed:
+27
+Not Executed:
+0
+Date:
+2015-06-26
+Time:
+12:10:18+0200
+Selected Project Items
+Test Collection "005_ReportTests"
+Used Test Environments
+GNU GCC Eclipse CDT (Default)
+Test Case Results for Each Test Object (without Coverage)
+The table above shows each test object on the x axis and the number of test cases of the respective test 
+object 
+on the y axis. Each bar is divided into passed, not executed and failed test cases. The test case results 
+do 
+not take into account any coverage result (i.e. if all test cases of a test object are passed in this table but 
+the 
+coverage is failed, the overall test object result will be failed).
+Branch (C1) Coverage: Total Branches for Each Test Object
+The table above shows each test object on the x axis and the number of branches of the respective test object 
+on 
+the y axis. Each bar is divided into reached branches (i.e. branches that have been executed during the 
+test) 
+and unreached branches.
+TEST OVERVIEW REPORT
+2015-06-26, 12:10:18+0200
+Project QTS Tests
+<footer>
+2
+MC/DC Coverage: Total Condition Combinations for Each Test Object
+The table above shows test objects on the x axis and the number of condition combinations of all decisions of 
+the 
+respective test object on the y axis. The number of condition combinations is based on the number of 
+boolean 
+conditions within each decision of the test object. To achieve full MC/DC coverage, each decision 
+requires 
+all contained atomic conditions to evaluate to both true and false independently of all other conditions. 
+The 
+cumulated number of rows within such tables of condition combinations is what is displayed in this table.
+Each bar is divided into reached condition combinations (i.e. combinations of boolean condition values that 
+have 
+been executed during the test) and unreached condition combinations.
+TEST OVERVIEW REPORT
+2015-06-26, 12:10:18+0200
+Project QTS Tests
+<footer>
+3
+Test Object List
+The following table lists all test objects with their test case and coverage results. The cumulated results for modules, folders and test collections are also displayed, the 
+indentation 
+within the name column indicates the parent relationship of the elements.
+Please note that only test objects are numbered within the first column. This number is referenced on the x axis within the overview charts for test case and coverage results 
+available 
+on previous pages (if included into the report).
+No.
+Name
+C1
+MC/DC
+Test Cases
+Result
+ 
+QTS Tests
+63.63 %
+60.71 %
+71 of 234 failed
+ 
+005_ReportTests
+63.63 %
+60.71 %
+71 of 234 failed
+ 
+005_ReportTests_1
+57.14 %
+-
+17 of 49 failed
+1
+TC_005_01_reportTest
+-
+-
+1 of 1 passed
+2
+TC_005_02_reportTest
+-
+-
+1 of 1 passed
+3
+TC_005_03_reportTest
+-
+-
+1 of 1 passed
+4
+TC_005_04_reportTest
+-
+-
+1 of 1 passed
+5
+TC_005_05_reportTest
+-
+-
+1 of 1 passed
+6
+TC_005_06_reportTest
+-
+-
+1 of 1 failed
+7
+TC_005_07_reportTest
+-
+-
+1 of 1 failed
+8
+TC_005_08_reportTest
+-
+-
+1 of 1 failed
+9
+TC_005_09_reportTest
+-
+-
+6 of 6 passed
+10
+TC_005_10_reportTest
+-
+-
+6 of 6 passed
+11
+TC_005_11_reportTest
+-
+-
+4 of 4 passed
+12
+TC_005_12_reportTest
+71.42 %
+-
+2 of 5 failed
+13
+TC_005_13_reportTest
+71.42 %
+-
+2 of 4 failed
+14
+TC_005_14_reportTest
+28.57 %
+-
+4 of 6 failed
+15
+TC_005_15_reportTest
+-
+-
+4 of 4 failed
+16
+TC_005_16_reportTest
+-
+-
+2 of 6 failed
+ 
+005_ReportTests_2
+-
+-
+52 of 159 failed
+17
+TC_005_17_reportTest
+-
+-
+3 of 3 passed
+TEST OVERVIEW REPORT
+2015-06-26, 12:10:18+0200
+Project QTS Tests
+<footer>
+4
+No.
+Name
+C1
+MC/DC
+Test Cases
+Result
+18
+TC_005_18_reportTest
+-
+-
+3 of 3 passed
+19
+TC_005_19_reportTest
+-
+-
+4 of 4 passed
+20
+TC_005_20_reportTest
+-
+-
+4 of 4 passed
+21
+TC_005_21_reportTest
+-
+-
+7 of 7 passed
+22
+TC_005_22_reportTest
+-
+-
+5 of 5 passed
+23
+TC_005_23_reportTest
+-
+-
+5 of 5 passed
+24
+TC_005_24_reportTest
+-
+-
+5 of 5 passed
+25
+TC_005_25_reportTest
+-
+-
+7 of 7 passed
+26
+TC_005_26_reportTest
+-
+-
+9 of 9 passed
+27
+TC_005_27_reportTest
+-
+-
+10 of 10 passed
+28
+TC_005_28_reportTest
+-
+-
+6 of 6 passed
+29
+TC_005_29_reportTest
+-
+-
+1 of 1 failed
+30
+TC_005_30_reportTest
+-
+-
+1 of 5 failed
+31
+TC_005_31_reportTest
+-
+-
+8 of 8 failed
+32
+TC_005_32_reportTest
+-
+-
+2 of 8 failed
+33
+TC_005_33_reportTest
+-
+-
+2 of 7 failed
+34
+TC_005_34_reportTest
+-
+-
+3 of 6 failed
+35
+TC_005_35_reportTest
+-
+-
+3 of 6 failed
+36
+TC_005_36_reportTest
+-
+-
+4 of 6 passed
+37
+TC_005_37_reportTest
+-
+-
+3 of 8 failed
+38
+TC_005_38_reportTest
+-
+-
+4 of 8 failed
+39
+TC_005_39_reportTest
+-
+-
+5 of 8 failed
+40
+TC_005_40_reportTest
+-
+-
+10 of 10 failed
+41
+TC_005_41_reportTest
+-
+-
+10 of 10 failed
+ 
+005_ReportTests_3
+75 %
+60.71 %
+19 of 19 passed
+42
+TC_005_42_reportTest
+75 %
+-
+3 of 3 passed
+43
+TC_005_43_reportTest
+-
+75 %
+4 of 4 passed
+TEST OVERVIEW REPORT
+2015-06-26, 12:10:18+0200
+Project QTS Tests
+<footer>
+5
+No.
+Name
+C1
+MC/DC
+Test Cases
+Result
+44
+TC_005_44_reportTest
+-
+60 %
+4 of 4 passed
+45
+TC_005_45_reportTest
+100 %
+75 %
+4 of 4 passed
+46
+TC_005_46_reportTest
+66.66 %
+50 %
+4 of 4 passed
+ 
+005_ReportTests_4
+-
+-
+2 of 7 failed
+47
+TC_005_47_reportTest
+-
+-
+1 of 1 passed
+48
+TC_005_48_reportTest
+-
+-
+1 of 3 failed
+49
+TC_005_49_reportTest
+-
+-
+1 of 3 failed
