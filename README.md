@@ -5,6 +5,7 @@ Jenkins Plugin that transforms Tessy details reports into xUnit format so they c
 It has been developed as a [xUnit Plugin](https://wiki.jenkins-ci.org/display/JENKINS/xUnit+Plugin) extension.
 
 To use it
+
 1. select the build step "Process xUnit test result report" or "Publish xUnit test result report" post-build action.
 2. In either case click on "Add" button
 3. select "Tessy-3.2" from drop down list.
